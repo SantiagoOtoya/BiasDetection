@@ -1,0 +1,381 @@
+:root {
+  --bg: #0f1420;
+  --surface: #171e2e;
+  --surface-2: #1f2839;
+  --border: #2a3550;
+  --text: #e7ecf5;
+  --text-muted: #97a3bd;
+  --accent: #5b8cff;
+  --accent-hover: #6f9bff;
+  --level-low: #3fb27f;
+  --level-moderate: #e0b23a;
+  --level-high: #e08a3a;
+  --level-severe: #e2564d;
+  --danger: #e2564d;
+  --radius: 10px;
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 380px;
+  min-height: 220px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.app-header h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.icon-button:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* Main */
+.app-main {
+  padding: 16px;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hint {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.primary-button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.primary-button:hover {
+  background: var(--accent-hover);
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ghost-button {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 9px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ghost-button:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.backend-note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Loading */
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  align-self: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-message {
+  text-align: center;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Error */
+.error-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--danger);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.error-title {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.error-message {
+  text-align: center;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* Score card */
+.score-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.score-gauge {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.score-value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.score-max {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.score-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score-level {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.level-low {
+  color: var(--level-low);
+}
+.level-moderate {
+  color: var(--level-moderate);
+}
+.level-high {
+  color: var(--level-high);
+}
+.level-severe {
+  color: var(--level-severe);
+}
+.level-unknown {
+  color: var(--text-muted);
+}
+
+.score-caption {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Report */
+.section-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin: 16px 0 8px;
+}
+
+.report-text {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.report-text p {
+  margin: 0 0 10px;
+}
+
+.report-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Fact check */
+.factcheck-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.factcheck-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left-width: 3px;
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 13px;
+}
+
+.factcheck-item .claim {
+  display: block;
+}
+
+.factcheck-item .rationale {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+
+.status-verified {
+  background: rgba(63, 178, 127, 0.18);
+  color: var(--level-low);
+}
+.status-verified.border,
+.factcheck-item.status-border-verified {
+  border-left-color: var(--level-low);
+}
+.status-unverified {
+  background: rgba(151, 163, 189, 0.18);
+  color: var(--text-muted);
+}
+.factcheck-item.status-border-unverified {
+  border-left-color: var(--text-muted);
+}
+.status-disputed {
+  background: rgba(224, 138, 58, 0.18);
+  color: var(--level-high);
+}
+.factcheck-item.status-border-disputed {
+  border-left-color: var(--level-high);
+}
+.status-false {
+  background: rgba(226, 86, 77, 0.18);
+  color: var(--danger);
+}
+.factcheck-item.status-border-false {
+  border-left-color: var(--danger);
+}
+
+.empty-note {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.report-actions .primary-button {
+  flex: 1;
+}
+
+/* Footer */
+.app-footer {
+  border-top: 1px solid var(--border);
+  padding: 8px 16px;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--surface);
+}
