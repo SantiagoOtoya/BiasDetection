@@ -1,0 +1,6 @@
+# Backend server dependencies (extension API). Model/inference deps live in
+# ../LLM-inference/requirements-inference.txt and are added when the real
+# pipeline is enabled (Phase 5+).
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.6.0
