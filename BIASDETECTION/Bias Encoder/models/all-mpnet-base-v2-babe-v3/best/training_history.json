@@ -1,0 +1,1018 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "bias": {
+        "accuracy": 0.6223844282238443,
+        "balanced_accuracy": 0.6456928749281747,
+        "confusion_matrix": [
+          [
+            799,
+            121
+          ],
+          [
+            655,
+            480
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.6130604591212794,
+        "per_class": [
+          {
+            "f1": 0.6731255265374895,
+            "false_negative": 121,
+            "false_positive": 655,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.5495185694635488,
+            "predicted_support": 1454,
+            "recall": 0.8684782608695653,
+            "support": 920,
+            "true_positive": 799
+          },
+          {
+            "f1": 0.5529953917050692,
+            "false_negative": 655,
+            "false_positive": 121,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.7986688851913477,
+            "predicted_support": 601,
+            "recall": 0.42290748898678415,
+            "support": 1135,
+            "true_positive": 480
+          }
+        ],
+        "pr_auc": 0.7519121922066002,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.7301230607163378,
+        "support": 2055,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.6223844282238443,
+      "bias_balanced_accuracy": 0.6456928749281747,
+      "bias_biased_precision": 0.7986688851913477,
+      "bias_biased_recall": 0.42290748898678415,
+      "bias_loss": 0.6733391510309094,
+      "bias_macro_f1": 0.6130604591212794,
+      "bias_supervised_examples": 2055,
+      "learning_rate": 1.6681034482758623e-05,
+      "loss": 0.8768397411870841,
+      "opinion_style": {
+        "accuracy": 0.6315505132360886,
+        "balanced_accuracy": 0.6353512518770565,
+        "confusion_matrix": [
+          [
+            332,
+            606
+          ],
+          [
+            76,
+            837
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.6019199186673966,
+        "per_class": [
+          {
+            "f1": 0.49331352154531943,
+            "false_negative": 606,
+            "false_positive": 76,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.8137254901960784,
+            "predicted_support": 408,
+            "recall": 0.35394456289978676,
+            "support": 938,
+            "true_positive": 332
+          },
+          {
+            "f1": 0.7105263157894737,
+            "false_negative": 76,
+            "false_positive": 606,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.58004158004158,
+            "predicted_support": 1443,
+            "recall": 0.9167579408543264,
+            "support": 913,
+            "true_positive": 837
+          }
+        ],
+        "pr_auc": 0.7145086488481407,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.7525928486187432,
+        "support": 1851,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.6315505132360886,
+      "opinion_style_balanced_accuracy": 0.6353512518770565,
+      "opinion_style_loss": 0.6783352699302989,
+      "opinion_style_macro_f1": 0.6019199186673966,
+      "opinion_style_objective_recall": 0.35394456289978676,
+      "opinion_style_opinionated_recall": 0.9167579408543264,
+      "opinion_style_supervised_examples": 1851
+    },
+    "validation": {
+      "bias": {
+        "accuracy": 0.7253634894991923,
+        "balanced_accuracy": 0.707431503226489,
+        "confusion_matrix": [
+          [
+            151,
+            123
+          ],
+          [
+            47,
+            298
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.7089491967960351,
+        "per_class": [
+          {
+            "f1": 0.6398305084745765,
+            "false_negative": 123,
+            "false_positive": 47,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.7626262626262627,
+            "predicted_support": 198,
+            "recall": 0.551094890510949,
+            "support": 274,
+            "true_positive": 151
+          },
+          {
+            "f1": 0.7780678851174936,
+            "false_negative": 47,
+            "false_positive": 123,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.7078384798099763,
+            "predicted_support": 421,
+            "recall": 0.863768115942029,
+            "support": 345,
+            "true_positive": 298
+          }
+        ],
+        "pr_auc": 0.8863244586765854,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8454829154765683,
+        "support": 619,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.7253634894991923,
+      "bias_balanced_accuracy": 0.707431503226489,
+      "bias_biased_precision": 0.7078384798099763,
+      "bias_biased_recall": 0.863768115942029,
+      "bias_loss": 0.646663712184148,
+      "bias_macro_f1": 0.7089491967960351,
+      "bias_supervised_examples": 619,
+      "loss": 0.8397245455250408,
+      "opinion_style": {
+        "accuracy": 0.7857142857142857,
+        "balanced_accuracy": 0.7541666666666667,
+        "confusion_matrix": [
+          [
+            95,
+            55
+          ],
+          [
+            32,
+            224
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.7616518775937109,
+        "per_class": [
+          {
+            "f1": 0.6859205776173285,
+            "false_negative": 55,
+            "false_positive": 32,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.7480314960629921,
+            "predicted_support": 127,
+            "recall": 0.6333333333333333,
+            "support": 150,
+            "true_positive": 95
+          },
+          {
+            "f1": 0.8373831775700934,
+            "false_negative": 32,
+            "false_positive": 55,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.8028673835125448,
+            "predicted_support": 279,
+            "recall": 0.875,
+            "support": 256,
+            "true_positive": 224
+          }
+        ],
+        "pr_auc": 0.9197678473633566,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8601822916666667,
+        "support": 406,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.7857142857142857,
+      "opinion_style_balanced_accuracy": 0.7541666666666667,
+      "opinion_style_loss": 0.6435360812216467,
+      "opinion_style_macro_f1": 0.7616518775937109,
+      "opinion_style_objective_recall": 0.6333333333333333,
+      "opinion_style_opinionated_recall": 0.875,
+      "opinion_style_supervised_examples": 406
+    }
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "bias": {
+        "accuracy": 0.7819951338199513,
+        "balanced_accuracy": 0.785141735299751,
+        "confusion_matrix": [
+          [
+            750,
+            170
+          ],
+          [
+            278,
+            857
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.781402496357658,
+        "per_class": [
+          {
+            "f1": 0.7700205338809035,
+            "false_negative": 170,
+            "false_positive": 278,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.7295719844357976,
+            "predicted_support": 1028,
+            "recall": 0.8152173913043478,
+            "support": 920,
+            "true_positive": 750
+          },
+          {
+            "f1": 0.7927844588344126,
+            "false_negative": 278,
+            "false_positive": 170,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8344693281402142,
+            "predicted_support": 1027,
+            "recall": 0.7550660792951542,
+            "support": 1135,
+            "true_positive": 857
+          }
+        ],
+        "pr_auc": 0.8495043844581827,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8289590116835855,
+        "support": 2055,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.7819951338199513,
+      "bias_balanced_accuracy": 0.785141735299751,
+      "bias_biased_precision": 0.8344693281402142,
+      "bias_biased_recall": 0.7550660792951542,
+      "bias_loss": 0.6053609642669232,
+      "bias_macro_f1": 0.781402496357658,
+      "bias_supervised_examples": 2055,
+      "learning_rate": 1.1120689655172414e-05,
+      "loss": 0.7895564442133381,
+      "opinion_style": {
+        "accuracy": 0.8125337655321447,
+        "balanced_accuracy": 0.8123171110493534,
+        "confusion_matrix": [
+          [
+            777,
+            161
+          ],
+          [
+            186,
+            727
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8123968769469063,
+        "per_class": [
+          {
+            "f1": 0.8174644923724356,
+            "false_negative": 161,
+            "false_positive": 186,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.8068535825545171,
+            "predicted_support": 963,
+            "recall": 0.8283582089552238,
+            "support": 938,
+            "true_positive": 777
+          },
+          {
+            "f1": 0.8073292615213771,
+            "false_negative": 186,
+            "false_positive": 161,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.8186936936936937,
+            "predicted_support": 888,
+            "recall": 0.7962760131434831,
+            "support": 913,
+            "true_positive": 727
+          }
+        ],
+        "pr_auc": 0.8348919891387879,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8490431974068011,
+        "support": 1851,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.8125337655321447,
+      "opinion_style_balanced_accuracy": 0.8123171110493534,
+      "opinion_style_loss": 0.6139849175501914,
+      "opinion_style_macro_f1": 0.8123968769469063,
+      "opinion_style_objective_recall": 0.8283582089552238,
+      "opinion_style_opinionated_recall": 0.7962760131434831,
+      "opinion_style_supervised_examples": 1851
+    },
+    "validation": {
+      "bias": {
+        "accuracy": 0.8093699515347335,
+        "balanced_accuracy": 0.8019464720194647,
+        "confusion_matrix": [
+          [
+            202,
+            72
+          ],
+          [
+            46,
+            299
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8045709454397568,
+        "per_class": [
+          {
+            "f1": 0.7739463601532567,
+            "false_negative": 72,
+            "false_positive": 46,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.8145161290322581,
+            "predicted_support": 248,
+            "recall": 0.7372262773722628,
+            "support": 274,
+            "true_positive": 202
+          },
+          {
+            "f1": 0.835195530726257,
+            "false_negative": 46,
+            "false_positive": 72,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8059299191374663,
+            "predicted_support": 371,
+            "recall": 0.8666666666666667,
+            "support": 345,
+            "true_positive": 299
+          }
+        ],
+        "pr_auc": 0.9192430697038534,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.9002909129376917,
+        "support": 619,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.8093699515347335,
+      "bias_balanced_accuracy": 0.8019464720194647,
+      "bias_biased_precision": 0.8059299191374663,
+      "bias_biased_recall": 0.8666666666666667,
+      "bias_loss": 0.5794579892243246,
+      "bias_macro_f1": 0.8045709454397568,
+      "bias_supervised_examples": 619,
+      "loss": 0.753666498356759,
+      "opinion_style": {
+        "accuracy": 0.8325123152709359,
+        "balanced_accuracy": 0.8188802083333333,
+        "confusion_matrix": [
+          [
+            115,
+            35
+          ],
+          [
+            33,
+            223
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8197581803462773,
+        "per_class": [
+          {
+            "f1": 0.7718120805369126,
+            "false_negative": 35,
+            "false_positive": 33,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.777027027027027,
+            "predicted_support": 148,
+            "recall": 0.7666666666666667,
+            "support": 150,
+            "true_positive": 115
+          },
+          {
+            "f1": 0.867704280155642,
+            "false_negative": 33,
+            "false_positive": 35,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.8643410852713178,
+            "predicted_support": 258,
+            "recall": 0.87109375,
+            "support": 256,
+            "true_positive": 223
+          }
+        ],
+        "pr_auc": 0.939889970363366,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.909765625,
+        "support": 406,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.8325123152709359,
+      "opinion_style_balanced_accuracy": 0.8188802083333333,
+      "opinion_style_loss": 0.5806950202666115,
+      "opinion_style_macro_f1": 0.8197581803462773,
+      "opinion_style_objective_recall": 0.7666666666666667,
+      "opinion_style_opinionated_recall": 0.87109375,
+      "opinion_style_supervised_examples": 406
+    }
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "bias": {
+        "accuracy": 0.8194647201946472,
+        "balanced_accuracy": 0.8152533039647577,
+        "confusion_matrix": [
+          [
+            713,
+            207
+          ],
+          [
+            164,
+            971
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8165735225231272,
+        "per_class": [
+          {
+            "f1": 0.7935447968836951,
+            "false_negative": 207,
+            "false_positive": 164,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.8129988597491448,
+            "predicted_support": 877,
+            "recall": 0.775,
+            "support": 920,
+            "true_positive": 713
+          },
+          {
+            "f1": 0.8396022481625594,
+            "false_negative": 164,
+            "false_positive": 207,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8242784380305602,
+            "predicted_support": 1178,
+            "recall": 0.8555066079295154,
+            "support": 1135,
+            "true_positive": 971
+          }
+        ],
+        "pr_auc": 0.8509370753945613,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8574411032369278,
+        "support": 2055,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.8194647201946472,
+      "bias_balanced_accuracy": 0.8152533039647577,
+      "bias_biased_precision": 0.8242784380305602,
+      "bias_biased_recall": 0.8555066079295154,
+      "bias_loss": 0.5620481630601442,
+      "bias_macro_f1": 0.8165735225231272,
+      "bias_supervised_examples": 2055,
+      "learning_rate": 5.560344827586208e-06,
+      "loss": 0.7336877076295171,
+      "opinion_style": {
+        "accuracy": 0.826580226904376,
+        "balanced_accuracy": 0.8273002846820505,
+        "confusion_matrix": [
+          [
+            726,
+            212
+          ],
+          [
+            109,
+            804
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8262717328091407,
+        "per_class": [
+          {
+            "f1": 0.8189509306260575,
+            "false_negative": 212,
+            "false_positive": 109,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.8694610778443114,
+            "predicted_support": 835,
+            "recall": 0.7739872068230277,
+            "support": 938,
+            "true_positive": 726
+          },
+          {
+            "f1": 0.833592534992224,
+            "false_negative": 109,
+            "false_positive": 212,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.7913385826771654,
+            "predicted_support": 1016,
+            "recall": 0.8806133625410734,
+            "support": 913,
+            "true_positive": 804
+          }
+        ],
+        "pr_auc": 0.8346647830058159,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8682557327585201,
+        "support": 1851,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.826580226904376,
+      "opinion_style_balanced_accuracy": 0.8273002846820505,
+      "opinion_style_loss": 0.5721318039290806,
+      "opinion_style_macro_f1": 0.8262717328091407,
+      "opinion_style_objective_recall": 0.7739872068230277,
+      "opinion_style_opinionated_recall": 0.8806133625410734,
+      "opinion_style_supervised_examples": 1851
+    },
+    "validation": {
+      "bias": {
+        "accuracy": 0.81421647819063,
+        "balanced_accuracy": 0.8051676716386332,
+        "confusion_matrix": [
+          [
+            199,
+            75
+          ],
+          [
+            40,
+            305
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8086038851919071,
+        "per_class": [
+          {
+            "f1": 0.7758284600389863,
+            "false_negative": 75,
+            "false_positive": 40,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.8326359832635983,
+            "predicted_support": 239,
+            "recall": 0.7262773722627737,
+            "support": 274,
+            "true_positive": 199
+          },
+          {
+            "f1": 0.8413793103448277,
+            "false_negative": 40,
+            "false_positive": 75,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8026315789473685,
+            "predicted_support": 380,
+            "recall": 0.8840579710144928,
+            "support": 345,
+            "true_positive": 305
+          }
+        ],
+        "pr_auc": 0.9306458435993378,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.9109806410663281,
+        "support": 619,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.81421647819063,
+      "bias_balanced_accuracy": 0.8051676716386332,
+      "bias_biased_precision": 0.8026315789473685,
+      "bias_biased_recall": 0.8840579710144928,
+      "bias_loss": 0.5518742785315136,
+      "bias_macro_f1": 0.8086038851919071,
+      "bias_supervised_examples": 619,
+      "loss": 0.7185703334014905,
+      "opinion_style": {
+        "accuracy": 0.8300492610837439,
+        "balanced_accuracy": 0.8086458333333333,
+        "confusion_matrix": [
+          [
+            109,
+            41
+          ],
+          [
+            28,
+            228
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8140766550522648,
+        "per_class": [
+          {
+            "f1": 0.759581881533101,
+            "false_negative": 41,
+            "false_positive": 28,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.7956204379562044,
+            "predicted_support": 137,
+            "recall": 0.7266666666666667,
+            "support": 150,
+            "true_positive": 109
+          },
+          {
+            "f1": 0.8685714285714285,
+            "false_negative": 28,
+            "false_positive": 41,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.8475836431226765,
+            "predicted_support": 269,
+            "recall": 0.890625,
+            "support": 256,
+            "true_positive": 228
+          }
+        ],
+        "pr_auc": 0.9509251938223648,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.9158984375,
+        "support": 406,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.8300492610837439,
+      "opinion_style_balanced_accuracy": 0.8086458333333333,
+      "opinion_style_loss": 0.5556534942787182,
+      "opinion_style_macro_f1": 0.8140766550522648,
+      "opinion_style_objective_recall": 0.7266666666666667,
+      "opinion_style_opinionated_recall": 0.890625,
+      "opinion_style_supervised_examples": 406
+    }
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "bias": {
+        "accuracy": 0.8496350364963504,
+        "balanced_accuracy": 0.8486401072591458,
+        "confusion_matrix": [
+          [
+            772,
+            148
+          ],
+          [
+            161,
+            974
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8481679949481388,
+        "per_class": [
+          {
+            "f1": 0.8332433890987587,
+            "false_negative": 148,
+            "false_positive": 161,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.827438370846731,
+            "predicted_support": 933,
+            "recall": 0.8391304347826087,
+            "support": 920,
+            "true_positive": 772
+          },
+          {
+            "f1": 0.8630926007975188,
+            "false_negative": 161,
+            "false_positive": 148,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8680926916221033,
+            "predicted_support": 1122,
+            "recall": 0.8581497797356828,
+            "support": 1135,
+            "true_positive": 974
+          }
+        ],
+        "pr_auc": 0.8896072921591313,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8880932771499712,
+        "support": 2055,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.8496350364963504,
+      "bias_balanced_accuracy": 0.8486401072591458,
+      "bias_biased_precision": 0.8680926916221033,
+      "bias_biased_recall": 0.8581497797356828,
+      "bias_loss": 0.5289282740032586,
+      "bias_macro_f1": 0.8481679949481388,
+      "bias_supervised_examples": 2055,
+      "learning_rate": 0.0,
+      "loss": 0.6927917518754945,
+      "opinion_style": {
+        "accuracy": 0.8411669367909238,
+        "balanced_accuracy": 0.841532051835954,
+        "confusion_matrix": [
+          [
+            764,
+            174
+          ],
+          [
+            120,
+            793
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8411279398369806,
+        "per_class": [
+          {
+            "f1": 0.8386388583973656,
+            "false_negative": 174,
+            "false_positive": 120,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.8642533936651584,
+            "predicted_support": 884,
+            "recall": 0.814498933901919,
+            "support": 938,
+            "true_positive": 764
+          },
+          {
+            "f1": 0.8436170212765957,
+            "false_negative": 120,
+            "false_positive": 174,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.8200620475698035,
+            "predicted_support": 967,
+            "recall": 0.8685651697699891,
+            "support": 913,
+            "true_positive": 793
+          }
+        ],
+        "pr_auc": 0.8599813851288035,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.8891386441287539,
+        "support": 1851,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.8411669367909238,
+      "opinion_style_balanced_accuracy": 0.841532051835954,
+      "opinion_style_loss": 0.5462115639897739,
+      "opinion_style_macro_f1": 0.8411279398369806,
+      "opinion_style_objective_recall": 0.814498933901919,
+      "opinion_style_opinionated_recall": 0.8685651697699891,
+      "opinion_style_supervised_examples": 1851
+    },
+    "validation": {
+      "bias": {
+        "accuracy": 0.840064620355412,
+        "balanced_accuracy": 0.8306093303713107,
+        "confusion_matrix": [
+          [
+            205,
+            69
+          ],
+          [
+            30,
+            315
+          ]
+        ],
+        "label_names": [
+          "not_biased",
+          "biased"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8348492565912344,
+        "per_class": [
+          {
+            "f1": 0.8055009823182713,
+            "false_negative": 69,
+            "false_positive": 30,
+            "label": "not_biased",
+            "label_id": 0,
+            "precision": 0.8723404255319149,
+            "predicted_support": 235,
+            "recall": 0.7481751824817519,
+            "support": 274,
+            "true_positive": 205
+          },
+          {
+            "f1": 0.8641975308641975,
+            "false_negative": 30,
+            "false_positive": 69,
+            "label": "biased",
+            "label_id": 1,
+            "precision": 0.8203125,
+            "predicted_support": 384,
+            "recall": 0.9130434782608695,
+            "support": 345,
+            "true_positive": 315
+          }
+        ],
+        "pr_auc": 0.9372920537757882,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.9193959589548292,
+        "support": 619,
+        "threshold": 0.5
+      },
+      "bias_accuracy": 0.840064620355412,
+      "bias_balanced_accuracy": 0.8306093303713107,
+      "bias_biased_precision": 0.8203125,
+      "bias_biased_recall": 0.9130434782608695,
+      "bias_loss": 0.5365240741430847,
+      "bias_macro_f1": 0.8348492565912344,
+      "bias_supervised_examples": 619,
+      "loss": 0.6989199749294891,
+      "opinion_style": {
+        "accuracy": 0.8522167487684729,
+        "balanced_accuracy": 0.8276041666666667,
+        "confusion_matrix": [
+          [
+            110,
+            40
+          ],
+          [
+            20,
+            236
+          ]
+        ],
+        "label_names": [
+          "objective_style",
+          "opinionated_style"
+        ],
+        "labels": [
+          0,
+          1
+        ],
+        "macro_f1": 0.8364661654135338,
+        "per_class": [
+          {
+            "f1": 0.7857142857142856,
+            "false_negative": 40,
+            "false_positive": 20,
+            "label": "objective_style",
+            "label_id": 0,
+            "precision": 0.8461538461538461,
+            "predicted_support": 130,
+            "recall": 0.7333333333333333,
+            "support": 150,
+            "true_positive": 110
+          },
+          {
+            "f1": 0.887218045112782,
+            "false_negative": 20,
+            "false_positive": 40,
+            "label": "opinionated_style",
+            "label_id": 1,
+            "precision": 0.855072463768116,
+            "predicted_support": 276,
+            "recall": 0.921875,
+            "support": 256,
+            "true_positive": 236
+          }
+        ],
+        "pr_auc": 0.9480426276787892,
+        "pr_auc_definition": "average_precision",
+        "roc_auc": 0.9153255208333333,
+        "support": 406,
+        "threshold": 0.5
+      },
+      "opinion_style_accuracy": 0.8522167487684729,
+      "opinion_style_balanced_accuracy": 0.8276041666666667,
+      "opinion_style_loss": 0.5413196531751815,
+      "opinion_style_macro_f1": 0.8364661654135338,
+      "opinion_style_objective_recall": 0.7333333333333333,
+      "opinion_style_opinionated_recall": 0.921875,
+      "opinion_style_supervised_examples": 406
+    }
+  }
+]

@@ -1,0 +1,6 @@
+# Optional corpus storage only. The base inference requirements already provide
+# sentence-transformers for the selected embedding backend.
+qdrant-client>=1.18,<2
+python-dotenv>=1.0,<2
+trafilatura>=2.0,<3
+pypdf>=5.0,<7

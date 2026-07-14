@@ -1,0 +1,2564 @@
+{
+  "cases": [
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-01",
+      "claim": "The reviewed Consumer Price Index document contains the atomic fact assigned to us_bls-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_ba8958fbb656d22e977ac6989edc8fc6ee0bb06e77f29063b57577b74a71ebb7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-02",
+      "claim": "The reviewed Employment Situation document contains the atomic fact assigned to us_bls-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e2baf24b579a3c801aec318d9ad98148a3a21e5d36a8fc1e7fa0604a898e70bf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-03",
+      "claim": "The reviewed Producer Price Index document contains the atomic fact assigned to us_bls-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_139384716ab8818cbe00ac0507f79b0f4ff046af64898e8a1123938ac08f7dc7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-04",
+      "claim": "The reviewed Employment Cost Index document contains the atomic fact assigned to us_bls-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e67991f43dd76b16f74dd5c77cae66dded145910f8a2d504ed02e00b01879d4d"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bls-case-05",
+      "claim": "Nonce proposition us_bls-case-05 is not established by any approved us_bls document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-06",
+      "claim": "The reviewed Consumer Price Index document contains the atomic fact assigned to us_bls-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_ba8958fbb656d22e977ac6989edc8fc6ee0bb06e77f29063b57577b74a71ebb7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-07",
+      "claim": "The reviewed Employment Situation document contains the atomic fact assigned to us_bls-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e2baf24b579a3c801aec318d9ad98148a3a21e5d36a8fc1e7fa0604a898e70bf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-08",
+      "claim": "The reviewed Producer Price Index document contains the atomic fact assigned to us_bls-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_139384716ab8818cbe00ac0507f79b0f4ff046af64898e8a1123938ac08f7dc7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-09",
+      "claim": "The reviewed Employment Cost Index document contains the atomic fact assigned to us_bls-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e67991f43dd76b16f74dd5c77cae66dded145910f8a2d504ed02e00b01879d4d"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bls-case-10",
+      "claim": "Nonce proposition us_bls-case-10 is not established by any approved us_bls document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-11",
+      "claim": "The reviewed Consumer Price Index document contains the atomic fact assigned to us_bls-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_ba8958fbb656d22e977ac6989edc8fc6ee0bb06e77f29063b57577b74a71ebb7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-12",
+      "claim": "The reviewed Employment Situation document contains the atomic fact assigned to us_bls-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e2baf24b579a3c801aec318d9ad98148a3a21e5d36a8fc1e7fa0604a898e70bf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-13",
+      "claim": "The reviewed Producer Price Index document contains the atomic fact assigned to us_bls-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_139384716ab8818cbe00ac0507f79b0f4ff046af64898e8a1123938ac08f7dc7"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bls-case-14",
+      "claim": "The reviewed Employment Cost Index document contains the atomic fact assigned to us_bls-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e67991f43dd76b16f74dd5c77cae66dded145910f8a2d504ed02e00b01879d4d"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bls-case-15",
+      "claim": "Nonce proposition us_bls-case-15 is not established by any approved us_bls document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bls",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-01",
+      "claim": "The reviewed America's Fiscal Future document contains the atomic fact assigned to us_gao-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a02e50bf6e8bf9d0917a51b96653ce49633c4eefd9f4e595d479be0c7e01fe8b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-02",
+      "claim": "The reviewed GAO Health Care document contains the atomic fact assigned to us_gao-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f2eed2964abd031f75f4e2b5714255350323b8cd6fee9cc3bad509232d669881"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-03",
+      "claim": "The reviewed Defense Capabilities and Management document contains the atomic fact assigned to us_gao-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4103490794ab3e4d4bae2cfdf35e340ecdd59157d9257cbba48e2528e9b09d85"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-04",
+      "claim": "The reviewed Disaster Assistance document contains the atomic fact assigned to us_gao-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_786b375ab5e3430173f76ca5df5494da480308e2688ca6db994b3c89b976ad6b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_gao-case-05",
+      "claim": "Nonce proposition us_gao-case-05 is not established by any approved us_gao document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-06",
+      "claim": "The reviewed America's Fiscal Future document contains the atomic fact assigned to us_gao-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a02e50bf6e8bf9d0917a51b96653ce49633c4eefd9f4e595d479be0c7e01fe8b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-07",
+      "claim": "The reviewed GAO Health Care document contains the atomic fact assigned to us_gao-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f2eed2964abd031f75f4e2b5714255350323b8cd6fee9cc3bad509232d669881"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-08",
+      "claim": "The reviewed Defense Capabilities and Management document contains the atomic fact assigned to us_gao-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4103490794ab3e4d4bae2cfdf35e340ecdd59157d9257cbba48e2528e9b09d85"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-09",
+      "claim": "The reviewed Disaster Assistance document contains the atomic fact assigned to us_gao-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_786b375ab5e3430173f76ca5df5494da480308e2688ca6db994b3c89b976ad6b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_gao-case-10",
+      "claim": "Nonce proposition us_gao-case-10 is not established by any approved us_gao document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-11",
+      "claim": "The reviewed America's Fiscal Future document contains the atomic fact assigned to us_gao-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a02e50bf6e8bf9d0917a51b96653ce49633c4eefd9f4e595d479be0c7e01fe8b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-12",
+      "claim": "The reviewed GAO Health Care document contains the atomic fact assigned to us_gao-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f2eed2964abd031f75f4e2b5714255350323b8cd6fee9cc3bad509232d669881"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-13",
+      "claim": "The reviewed Defense Capabilities and Management document contains the atomic fact assigned to us_gao-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4103490794ab3e4d4bae2cfdf35e340ecdd59157d9257cbba48e2528e9b09d85"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_gao-case-14",
+      "claim": "The reviewed Disaster Assistance document contains the atomic fact assigned to us_gao-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_786b375ab5e3430173f76ca5df5494da480308e2688ca6db994b3c89b976ad6b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_gao-case-15",
+      "claim": "Nonce proposition us_gao-case-15 is not established by any approved us_gao document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_gao",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-01",
+      "claim": "The reviewed Gross Domestic Product document contains the atomic fact assigned to us_bea-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_2896f5721e1c1b265478c1930e8f13e7502bff096ba3d1ed6b7170b71fc8651e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-02",
+      "claim": "The reviewed Personal Income and Outlays document contains the atomic fact assigned to us_bea-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a9d4ac528f9ff0c7aa3af4460aa9576c3a1c0cc82d1f101eba246ab31d370820"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-03",
+      "claim": "The reviewed International Trade in Goods and Services document contains the atomic fact assigned to us_bea-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_58edaffa58144eaf0e81b8904499654cdbeeb133590ddcbdd842595591c23daf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-04",
+      "claim": "The reviewed International Transactions document contains the atomic fact assigned to us_bea-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_385ca7abd79bc6eff88e8cad8d9e50aee6667042020f3cd4ad575d12c73f92c6"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bea-case-05",
+      "claim": "Nonce proposition us_bea-case-05 is not established by any approved us_bea document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-06",
+      "claim": "The reviewed Gross Domestic Product document contains the atomic fact assigned to us_bea-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_2896f5721e1c1b265478c1930e8f13e7502bff096ba3d1ed6b7170b71fc8651e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-07",
+      "claim": "The reviewed Personal Income and Outlays document contains the atomic fact assigned to us_bea-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a9d4ac528f9ff0c7aa3af4460aa9576c3a1c0cc82d1f101eba246ab31d370820"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-08",
+      "claim": "The reviewed International Trade in Goods and Services document contains the atomic fact assigned to us_bea-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_58edaffa58144eaf0e81b8904499654cdbeeb133590ddcbdd842595591c23daf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-09",
+      "claim": "The reviewed International Transactions document contains the atomic fact assigned to us_bea-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_385ca7abd79bc6eff88e8cad8d9e50aee6667042020f3cd4ad575d12c73f92c6"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bea-case-10",
+      "claim": "Nonce proposition us_bea-case-10 is not established by any approved us_bea document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-11",
+      "claim": "The reviewed Gross Domestic Product document contains the atomic fact assigned to us_bea-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_2896f5721e1c1b265478c1930e8f13e7502bff096ba3d1ed6b7170b71fc8651e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-12",
+      "claim": "The reviewed Personal Income and Outlays document contains the atomic fact assigned to us_bea-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a9d4ac528f9ff0c7aa3af4460aa9576c3a1c0cc82d1f101eba246ab31d370820"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-13",
+      "claim": "The reviewed International Trade in Goods and Services document contains the atomic fact assigned to us_bea-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_58edaffa58144eaf0e81b8904499654cdbeeb133590ddcbdd842595591c23daf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_bea-case-14",
+      "claim": "The reviewed International Transactions document contains the atomic fact assigned to us_bea-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_385ca7abd79bc6eff88e8cad8d9e50aee6667042020f3cd4ad575d12c73f92c6"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_bea-case-15",
+      "claim": "Nonce proposition us_bea-case-15 is not established by any approved us_bea document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_bea",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-01",
+      "claim": "The reviewed Population Estimates document contains the atomic fact assigned to us_census-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a770bf9fbfc67a1b8b54fa17ac8d3090dcfaf35905ec07f858ffa027e511bd63"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-02",
+      "claim": "The reviewed American Community Survey document contains the atomic fact assigned to us_census-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f922ec9cd1fbf4a9d6fd001619fd922352c4b5d08fdf4ef47d9dc723da34396c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-03",
+      "claim": "The reviewed Income and Poverty document contains the atomic fact assigned to us_census-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_97fe7b1bd05aa553d19ba9d128d3c8dfbcac3f8de960f2741f849f99deab5120"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-04",
+      "claim": "The reviewed Monthly Retail Trade document contains the atomic fact assigned to us_census-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_20d96da78585580088696297829822dff2f8584bc6a58d2918b3a8b0e6e73b7c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_census-case-05",
+      "claim": "Nonce proposition us_census-case-05 is not established by any approved us_census document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-06",
+      "claim": "The reviewed Population Estimates document contains the atomic fact assigned to us_census-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a770bf9fbfc67a1b8b54fa17ac8d3090dcfaf35905ec07f858ffa027e511bd63"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-07",
+      "claim": "The reviewed American Community Survey document contains the atomic fact assigned to us_census-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f922ec9cd1fbf4a9d6fd001619fd922352c4b5d08fdf4ef47d9dc723da34396c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-08",
+      "claim": "The reviewed Income and Poverty document contains the atomic fact assigned to us_census-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_97fe7b1bd05aa553d19ba9d128d3c8dfbcac3f8de960f2741f849f99deab5120"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-09",
+      "claim": "The reviewed Monthly Retail Trade document contains the atomic fact assigned to us_census-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_20d96da78585580088696297829822dff2f8584bc6a58d2918b3a8b0e6e73b7c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_census-case-10",
+      "claim": "Nonce proposition us_census-case-10 is not established by any approved us_census document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-11",
+      "claim": "The reviewed Population Estimates document contains the atomic fact assigned to us_census-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a770bf9fbfc67a1b8b54fa17ac8d3090dcfaf35905ec07f858ffa027e511bd63"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-12",
+      "claim": "The reviewed American Community Survey document contains the atomic fact assigned to us_census-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_f922ec9cd1fbf4a9d6fd001619fd922352c4b5d08fdf4ef47d9dc723da34396c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-13",
+      "claim": "The reviewed Income and Poverty document contains the atomic fact assigned to us_census-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_97fe7b1bd05aa553d19ba9d128d3c8dfbcac3f8de960f2741f849f99deab5120"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_census-case-14",
+      "claim": "The reviewed Monthly Retail Trade document contains the atomic fact assigned to us_census-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_20d96da78585580088696297829822dff2f8584bc6a58d2918b3a8b0e6e73b7c"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_census-case-15",
+      "claim": "Nonce proposition us_census-case-15 is not established by any approved us_census document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_census",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-01",
+      "claim": "The reviewed Budget and Economic Outlook document contains the atomic fact assigned to us_cbo-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_74ae4783349752232271f337a62505bbec36e97b145f72b64cc2849f5a9d1bed"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-02",
+      "claim": "The reviewed Long-Term Budget Outlook document contains the atomic fact assigned to us_cbo-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_d743b879d5ecccb8df1c9bc3de88d23f4e58beab901303a87cad09eab84daadf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-03",
+      "claim": "The reviewed Monthly Budget Review document contains the atomic fact assigned to us_cbo-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4b47e1b6716a54d153855367a0101a9beb8935994c240a2e5c053a31e767592e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-04",
+      "claim": "The reviewed Cost Estimates document contains the atomic fact assigned to us_cbo-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_0ab03a2a99d6f1e6e94f0da6762d6842cc10c53d76b607f95de4f23cffe5bf1f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cbo-case-05",
+      "claim": "Nonce proposition us_cbo-case-05 is not established by any approved us_cbo document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-06",
+      "claim": "The reviewed Budget and Economic Outlook document contains the atomic fact assigned to us_cbo-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_74ae4783349752232271f337a62505bbec36e97b145f72b64cc2849f5a9d1bed"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-07",
+      "claim": "The reviewed Long-Term Budget Outlook document contains the atomic fact assigned to us_cbo-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_d743b879d5ecccb8df1c9bc3de88d23f4e58beab901303a87cad09eab84daadf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-08",
+      "claim": "The reviewed Monthly Budget Review document contains the atomic fact assigned to us_cbo-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4b47e1b6716a54d153855367a0101a9beb8935994c240a2e5c053a31e767592e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-09",
+      "claim": "The reviewed Cost Estimates document contains the atomic fact assigned to us_cbo-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_0ab03a2a99d6f1e6e94f0da6762d6842cc10c53d76b607f95de4f23cffe5bf1f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cbo-case-10",
+      "claim": "Nonce proposition us_cbo-case-10 is not established by any approved us_cbo document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-11",
+      "claim": "The reviewed Budget and Economic Outlook document contains the atomic fact assigned to us_cbo-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_74ae4783349752232271f337a62505bbec36e97b145f72b64cc2849f5a9d1bed"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-12",
+      "claim": "The reviewed Long-Term Budget Outlook document contains the atomic fact assigned to us_cbo-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_d743b879d5ecccb8df1c9bc3de88d23f4e58beab901303a87cad09eab84daadf"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-13",
+      "claim": "The reviewed Monthly Budget Review document contains the atomic fact assigned to us_cbo-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_4b47e1b6716a54d153855367a0101a9beb8935994c240a2e5c053a31e767592e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cbo-case-14",
+      "claim": "The reviewed Cost Estimates document contains the atomic fact assigned to us_cbo-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_0ab03a2a99d6f1e6e94f0da6762d6842cc10c53d76b607f95de4f23cffe5bf1f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cbo-case-15",
+      "claim": "Nonce proposition us_cbo-case-15 is not established by any approved us_cbo document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cbo",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-01",
+      "claim": "The reviewed FOMC Statements document contains the atomic fact assigned to us_federal_reserve-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fe3255ea546db4b012c0272ce441878897cfc8d66c2ab3abbd531ad44cc190a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-02",
+      "claim": "The reviewed Monetary Policy Report document contains the atomic fact assigned to us_federal_reserve-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_128f043468546e8077de34c91592dfa811c03ffb3fc0659e7d1ce906509ef33e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-03",
+      "claim": "The reviewed Financial Stability Report document contains the atomic fact assigned to us_federal_reserve-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e5e64f972c675aeae0cae8e0f20ff5e62b500cdb80c7b746cb41de5032e22679"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-04",
+      "claim": "The reviewed Beige Book document contains the atomic fact assigned to us_federal_reserve-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9547f542e716c664f611567feb2f7ef5841fa7dc10a3cf60c0e7c39071b67c7a"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_federal_reserve-case-05",
+      "claim": "Nonce proposition us_federal_reserve-case-05 is not established by any approved us_federal_reserve document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-06",
+      "claim": "The reviewed FOMC Statements document contains the atomic fact assigned to us_federal_reserve-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fe3255ea546db4b012c0272ce441878897cfc8d66c2ab3abbd531ad44cc190a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-07",
+      "claim": "The reviewed Monetary Policy Report document contains the atomic fact assigned to us_federal_reserve-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_128f043468546e8077de34c91592dfa811c03ffb3fc0659e7d1ce906509ef33e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-08",
+      "claim": "The reviewed Financial Stability Report document contains the atomic fact assigned to us_federal_reserve-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e5e64f972c675aeae0cae8e0f20ff5e62b500cdb80c7b746cb41de5032e22679"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-09",
+      "claim": "The reviewed Beige Book document contains the atomic fact assigned to us_federal_reserve-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9547f542e716c664f611567feb2f7ef5841fa7dc10a3cf60c0e7c39071b67c7a"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_federal_reserve-case-10",
+      "claim": "Nonce proposition us_federal_reserve-case-10 is not established by any approved us_federal_reserve document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-11",
+      "claim": "The reviewed FOMC Statements document contains the atomic fact assigned to us_federal_reserve-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fe3255ea546db4b012c0272ce441878897cfc8d66c2ab3abbd531ad44cc190a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-12",
+      "claim": "The reviewed Monetary Policy Report document contains the atomic fact assigned to us_federal_reserve-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_128f043468546e8077de34c91592dfa811c03ffb3fc0659e7d1ce906509ef33e"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-13",
+      "claim": "The reviewed Financial Stability Report document contains the atomic fact assigned to us_federal_reserve-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e5e64f972c675aeae0cae8e0f20ff5e62b500cdb80c7b746cb41de5032e22679"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_federal_reserve-case-14",
+      "claim": "The reviewed Beige Book document contains the atomic fact assigned to us_federal_reserve-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9547f542e716c664f611567feb2f7ef5841fa7dc10a3cf60c0e7c39071b67c7a"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_federal_reserve-case-15",
+      "claim": "Nonce proposition us_federal_reserve-case-15 is not established by any approved us_federal_reserve document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_federal_reserve",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-01",
+      "claim": "The reviewed Morbidity and Mortality Weekly Report document contains the atomic fact assigned to us_cdc-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_bb0a1755c9e339cecea2e315c55d66498dbcda8f651fae7e60c38d97d70116a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-02",
+      "claim": "The reviewed National Vital Statistics Reports document contains the atomic fact assigned to us_cdc-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_26328a400e8779f0b69c20a2cda4121776757d714eb086dfc6448a426b2c1beb"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-03",
+      "claim": "The reviewed Respiratory Virus Surveillance document contains the atomic fact assigned to us_cdc-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e91a87c18247b17ba86d49634ec36958c9226b706b37b6174700b3fed3743dc2"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-04",
+      "claim": "The reviewed Immunization Schedules document contains the atomic fact assigned to us_cdc-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_171bbf35151dfedbedfe30626055f52f5c37db7470f338f16ca4818632f265aa"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cdc-case-05",
+      "claim": "Nonce proposition us_cdc-case-05 is not established by any approved us_cdc document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-06",
+      "claim": "The reviewed Morbidity and Mortality Weekly Report document contains the atomic fact assigned to us_cdc-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_bb0a1755c9e339cecea2e315c55d66498dbcda8f651fae7e60c38d97d70116a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-07",
+      "claim": "The reviewed National Vital Statistics Reports document contains the atomic fact assigned to us_cdc-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_26328a400e8779f0b69c20a2cda4121776757d714eb086dfc6448a426b2c1beb"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-08",
+      "claim": "The reviewed Respiratory Virus Surveillance document contains the atomic fact assigned to us_cdc-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e91a87c18247b17ba86d49634ec36958c9226b706b37b6174700b3fed3743dc2"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-09",
+      "claim": "The reviewed Immunization Schedules document contains the atomic fact assigned to us_cdc-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_171bbf35151dfedbedfe30626055f52f5c37db7470f338f16ca4818632f265aa"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cdc-case-10",
+      "claim": "Nonce proposition us_cdc-case-10 is not established by any approved us_cdc document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-11",
+      "claim": "The reviewed Morbidity and Mortality Weekly Report document contains the atomic fact assigned to us_cdc-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_bb0a1755c9e339cecea2e315c55d66498dbcda8f651fae7e60c38d97d70116a9"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-12",
+      "claim": "The reviewed National Vital Statistics Reports document contains the atomic fact assigned to us_cdc-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_26328a400e8779f0b69c20a2cda4121776757d714eb086dfc6448a426b2c1beb"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-13",
+      "claim": "The reviewed Respiratory Virus Surveillance document contains the atomic fact assigned to us_cdc-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_e91a87c18247b17ba86d49634ec36958c9226b706b37b6174700b3fed3743dc2"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_cdc-case-14",
+      "claim": "The reviewed Immunization Schedules document contains the atomic fact assigned to us_cdc-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_171bbf35151dfedbedfe30626055f52f5c37db7470f338f16ca4818632f265aa"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_cdc-case-15",
+      "claim": "Nonce proposition us_cdc-case-15 is not established by any approved us_cdc document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_cdc",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-01",
+      "claim": "The reviewed SEC Annual Reports document contains the atomic fact assigned to us_sec-case-01.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_6f591a9edfd73a1c038ddeaaff1f5c8d08f7b014b2a420d245d3bc26c8ed6e18"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-02",
+      "claim": "The reviewed SEC Enforcement and Litigation document contains the atomic fact assigned to us_sec-case-02.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fdfa4754ec0e8211d822466e64dbdf27775f68d5ada62f93e3e9d3dc51e9b52b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-03",
+      "claim": "The reviewed SEC Investor Alerts document contains the atomic fact assigned to us_sec-case-03.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9a0f9f9650f653a6b225b588f1df840c318be94754c68a6cb9d1f89dda31a05f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-04",
+      "claim": "The reviewed SEC Market Structure document contains the atomic fact assigned to us_sec-case-04.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a0cccdaf62fc84b77b91d422eae862199d684eddb6e5d80e3632e9c715f2b7d5"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_sec-case-05",
+      "claim": "Nonce proposition us_sec-case-05 is not established by any approved us_sec document.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-06",
+      "claim": "The reviewed SEC Annual Reports document contains the atomic fact assigned to us_sec-case-06.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_6f591a9edfd73a1c038ddeaaff1f5c8d08f7b014b2a420d245d3bc26c8ed6e18"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-07",
+      "claim": "The reviewed SEC Enforcement and Litigation document contains the atomic fact assigned to us_sec-case-07.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fdfa4754ec0e8211d822466e64dbdf27775f68d5ada62f93e3e9d3dc51e9b52b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-08",
+      "claim": "The reviewed SEC Investor Alerts document contains the atomic fact assigned to us_sec-case-08.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9a0f9f9650f653a6b225b588f1df840c318be94754c68a6cb9d1f89dda31a05f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-09",
+      "claim": "The reviewed SEC Market Structure document contains the atomic fact assigned to us_sec-case-09.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a0cccdaf62fc84b77b91d422eae862199d684eddb6e5d80e3632e9c715f2b7d5"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_sec-case-10",
+      "claim": "Nonce proposition us_sec-case-10 is not established by any approved us_sec document.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "development"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-11",
+      "claim": "The reviewed SEC Annual Reports document contains the atomic fact assigned to us_sec-case-11.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_6f591a9edfd73a1c038ddeaaff1f5c8d08f7b014b2a420d245d3bc26c8ed6e18"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-12",
+      "claim": "The reviewed SEC Enforcement and Litigation document contains the atomic fact assigned to us_sec-case-12.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_fdfa4754ec0e8211d822466e64dbdf27775f68d5ada62f93e3e9d3dc51e9b52b"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-13",
+      "claim": "The reviewed SEC Investor Alerts document contains the atomic fact assigned to us_sec-case-13.",
+      "difficulty": "easy",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_9a0f9f9650f653a6b225b588f1df840c318be94754c68a6cb9d1f89dda31a05f"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "held_out"
+    },
+    {
+      "answerable": true,
+      "case_id": "us_sec-case-14",
+      "claim": "The reviewed SEC Market Structure document contains the atomic fact assigned to us_sec-case-14.",
+      "difficulty": "medium",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [
+        "doc_a0cccdaf62fc84b77b91d422eae862199d684eddb6e5d80e3632e9c715f2b7d5"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "held_out"
+    },
+    {
+      "answerable": false,
+      "case_id": "us_sec-case-15",
+      "claim": "Nonce proposition us_sec-case-15 is not established by any approved us_sec document.",
+      "difficulty": "hard",
+      "pool_depth": 10,
+      "relevance_judgments": [],
+      "relevant_chunk_spans": [],
+      "relevant_document_ids": [],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "source_id": "us_sec",
+      "split": "held_out"
+    }
+  ],
+  "created_at": "2026-07-12T00:00:00Z",
+  "dataset_id": "trusted_retrieval_bootstrap_v1",
+  "gates": {
+    "irrelevant_result_rate_at_5": 0.3,
+    "multi_claim_coverage_at_10": 0.8,
+    "recall_at_5": 0.8,
+    "warm_hybrid_p95_seconds": 10.0
+  },
+  "multi_claim_scenarios": [
+    {
+      "claim_ids": [
+        "us_bls-case-01",
+        "us_bls-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bls-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_bls-case-03",
+        "us_bls-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bls-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_bls-case-06",
+        "us_bls-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bls-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_gao-case-01",
+        "us_gao-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_gao-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_gao-case-03",
+        "us_gao-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_gao-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_gao-case-06",
+        "us_gao-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_gao-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_bea-case-01",
+        "us_bea-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bea-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_bea-case-03",
+        "us_bea-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bea-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_bea-case-06",
+        "us_bea-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_bea-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_census-case-01",
+        "us_census-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_census-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_census-case-03",
+        "us_census-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_census-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_census-case-06",
+        "us_census-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_census-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_cbo-case-01",
+        "us_cbo-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cbo-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_cbo-case-03",
+        "us_cbo-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cbo-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_cbo-case-06",
+        "us_cbo-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cbo-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_federal_reserve-case-01",
+        "us_federal_reserve-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_federal_reserve-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_federal_reserve-case-03",
+        "us_federal_reserve-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_federal_reserve-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_federal_reserve-case-06",
+        "us_federal_reserve-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_federal_reserve-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_cdc-case-01",
+        "us_cdc-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cdc-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_cdc-case-03",
+        "us_cdc-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cdc-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_cdc-case-06",
+        "us_cdc-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_cdc-scenario-03",
+      "split": "held_out"
+    },
+    {
+      "claim_ids": [
+        "us_sec-case-01",
+        "us_sec-case-02"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_sec-scenario-01",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_sec-case-03",
+        "us_sec-case-04"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_sec-scenario-02",
+      "split": "development"
+    },
+    {
+      "claim_ids": [
+        "us_sec-case-06",
+        "us_sec-case-07"
+      ],
+      "review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "scenario_id": "us_sec-scenario-03",
+      "split": "held_out"
+    }
+  ],
+  "pooling": {
+    "depth": 10,
+    "unjudged_policy": "exclude_from_irrelevant_rate_and_report_separately"
+  },
+  "review_status": "pending_human_review",
+  "schema_version": "retrieval_eval/v1"
+}

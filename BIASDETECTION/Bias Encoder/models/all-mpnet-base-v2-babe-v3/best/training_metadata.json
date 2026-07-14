@@ -1,0 +1,137 @@
+{
+  "allow_legacy_calibration": false,
+  "article_id_column": null,
+  "batch_size": 16,
+  "best_validation_summary": {
+    "checkpoint_dir": "Bias Encoder\\models\\all-mpnet-base-v2-babe-v3\\best",
+    "development_metrics": {
+      "bias_biased_precision": 0.8203125,
+      "bias_biased_recall": 0.9130434782608695,
+      "bias_macro_f1": 0.8348492565912344,
+      "loss": 0.6989199749294891,
+      "opinion_style_macro_f1": 0.8364661654135338,
+      "opinion_style_objective_recall": 0.7333333333333333,
+      "opinion_style_opinionated_recall": 0.921875
+    },
+    "epoch": 4,
+    "monitor_metric": null,
+    "selection_value": [
+      0.8348492565912344,
+      0.8203125,
+      0.9130434782608695,
+      0.8364661654135338,
+      0.7333333333333333,
+      0.921875,
+      -0.6989199749294891
+    ],
+    "strategy": "multi_objective"
+  },
+  "bias_head_type": "binary_bias_logit_v1",
+  "bias_label_column": "label_bias",
+  "calibration_rows": 620,
+  "calibration_size": 0.15,
+  "canonical_data_manifest_path": "Bias Encoder\\artifacts\\production_v3_canonical_data_manifest.json",
+  "canonical_data_manifest_sha256": "5e2bf849a9dc0e54792b31752b18651f883c4f01c583a9caef90bd4a9f152e98",
+  "checkpoint_schema_version": "classification_heads/v3",
+  "checkpoint_selection": "multi_objective",
+  "class_weight_summary": {
+    "bias": [
+      1.1168478727340698,
+      0.9052863717079163
+    ],
+    "opinion_style": [
+      0.9866737723350525,
+      1.0136911869049072
+    ],
+    "weighting_source": "balanced"
+  },
+  "class_weighting": "balanced",
+  "classifier_input_contract": "target_sentence_marked/v1",
+  "classifier_mode": "production",
+  "cleaning_stats": {
+    "excluded": {
+      "empty_text": 0,
+      "global_duplicate": 3
+    },
+    "grouping_method_counts": {
+      "canonical_url": 4086,
+      "text_hash_fallback": 32
+    },
+    "input_rows": 4121,
+    "mbic_matched": 0,
+    "mbic_unmatched": 0,
+    "output_rows": 4118,
+    "source_counts": {
+      "BABE": 4118
+    }
+  },
+  "data_dir": "Bias Encoder\\BABE_HF",
+  "data_glob": [
+    "final_labels_*.csv"
+  ],
+  "dropout": 0.2,
+  "early_stopping_patience": 2,
+  "embedding_dim": 768,
+  "epochs": 4,
+  "event_column": null,
+  "final_test_metrics": null,
+  "freeze_embeddings": false,
+  "freeze_first_n_layers": 6,
+  "group_column": "news_link",
+  "head_hidden_dim": 256,
+  "head_type": "independent_binary_heads_v1",
+  "include_no_agreement": false,
+  "leakage_policy": "error",
+  "learning_rate": 2e-05,
+  "legacy_compatibility": false,
+  "max_grad_norm": 1.0,
+  "max_seq_length": 256,
+  "missing_label_policy": "mask",
+  "model_name": "sentence-transformers/all-mpnet-base-v2",
+  "monitor_metric": "bias_macro_f1",
+  "opinion_label_column": "label_opinion",
+  "opinion_sampling": "none",
+  "opinion_style_head_architecture": {
+    "dropout": 0.2,
+    "embedding_dim": 768,
+    "head_hidden_dim": 256,
+    "head_type": "binary_opinion_style_logit_v1",
+    "implementation": "one_hidden_layer_mlp",
+    "logit_names": [
+      "opinionated_style_logit"
+    ],
+    "output_dim": 1,
+    "probability_transform": "sigmoid"
+  },
+  "opinion_style_head_type": "binary_opinion_style_logit_v1",
+  "opinion_style_loss_weight": 0.3,
+  "opinion_style_target_mapping": {
+    "Entirely factual": "objective_style",
+    "Expresses writer's opinion": "opinionated_style",
+    "Somewhat factual but also opinionated": "opinionated_style"
+  },
+  "parameter_summary": {
+    "frozen": 42527232,
+    "total": 109486464,
+    "trainable": 66959232
+  },
+  "precision_confidence": 0.95,
+  "production_eligible": true,
+  "save_best_checkpoint": true,
+  "seed": 42,
+  "split_column": null,
+  "split_manifest_path": "Bias Encoder\\artifacts\\production_v3_split_manifest.json",
+  "split_manifest_sha256": "2186dce759cb763dabb43d1c7e1cba66123b24a2e46f7e6c2169a9c989e09069",
+  "split_strategy": "group",
+  "test_data_glob": null,
+  "test_rows": 824,
+  "test_size": 0.2,
+  "test_split_value": "test",
+  "train_data_glob": null,
+  "train_rows": 2055,
+  "train_split_value": "train",
+  "validation_rows": 619,
+  "validation_size": 0.15,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01
+}

@@ -1,0 +1,12 @@
+{
+  "bootstrap_seed": 42,
+  "confidence": 0.95,
+  "schema_version": "promotion_gates/v1",
+  "targets": {
+    "clear_bias_precision_lcb": 0.9,
+    "minimum_evaluable_support": 30,
+    "objective_style_recall_lcb": 0.5,
+    "opinion_style_macro_f1_bootstrap_lcb": 0.65,
+    "opinionated_style_recall_lcb": 0.5
+  }
+}

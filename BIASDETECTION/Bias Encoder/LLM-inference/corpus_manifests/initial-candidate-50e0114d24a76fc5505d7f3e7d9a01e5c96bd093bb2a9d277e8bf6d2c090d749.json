@@ -1,0 +1,1183 @@
+{
+  "collection": "trusted_corpus_v1",
+  "created_at": "2026-07-12T00:00:00Z",
+  "documents": [
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_ba8958fbb656d22e977ac6989edc8fc6ee0bb06e77f29063b57577b74a71ebb7",
+      "canonical_url": "https://www.bls.gov/cpi/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bls_public_domain_text",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "cpi",
+      "source_id": "us_bls",
+      "status": "pending_fetch",
+      "title": "Consumer Price Index"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_e2baf24b579a3c801aec318d9ad98148a3a21e5d36a8fc1e7fa0604a898e70bf",
+      "canonical_url": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bls_public_domain_text",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "employment_situation",
+      "source_id": "us_bls",
+      "status": "pending_fetch",
+      "title": "Employment Situation"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_139384716ab8818cbe00ac0507f79b0f4ff046af64898e8a1123938ac08f7dc7",
+      "canonical_url": "https://www.bls.gov/ppi/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bls_public_domain_text",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "ppi",
+      "source_id": "us_bls",
+      "status": "pending_fetch",
+      "title": "Producer Price Index"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_e67991f43dd76b16f74dd5c77cae66dded145910f8a2d504ed02e00b01879d4d",
+      "canonical_url": "https://www.bls.gov/eci/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bls_public_domain_text",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "employment_cost_index",
+      "source_id": "us_bls",
+      "status": "pending_fetch",
+      "title": "Employment Cost Index"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_7be144495f6585ff4a1ce2be72b1bf32e68ac38d2c78848860e8a3ecc3fcace6",
+      "canonical_url": "https://www.bls.gov/oes/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bls_public_domain_text",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "occupational_wages",
+      "source_id": "us_bls",
+      "status": "pending_fetch",
+      "title": "Occupational Employment and Wage Statistics"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_a02e50bf6e8bf9d0917a51b96653ce49633c4eefd9f4e595d479be0c7e01fe8b",
+      "canonical_url": "https://www.gao.gov/americas-fiscal-future",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_gao_public_domain_text",
+        "url": "https://www.gao.gov/copyright"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "fiscal_health",
+      "source_id": "us_gao",
+      "status": "pending_fetch",
+      "title": "America's Fiscal Future"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_f2eed2964abd031f75f4e2b5714255350323b8cd6fee9cc3bad509232d669881",
+      "canonical_url": "https://www.gao.gov/health-care",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_gao_public_domain_text",
+        "url": "https://www.gao.gov/copyright"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "healthcare",
+      "source_id": "us_gao",
+      "status": "pending_fetch",
+      "title": "GAO Health Care"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_4103490794ab3e4d4bae2cfdf35e340ecdd59157d9257cbba48e2528e9b09d85",
+      "canonical_url": "https://www.gao.gov/defense-capabilities-and-management",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_gao_public_domain_text",
+        "url": "https://www.gao.gov/copyright"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "defense",
+      "source_id": "us_gao",
+      "status": "pending_fetch",
+      "title": "Defense Capabilities and Management"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_786b375ab5e3430173f76ca5df5494da480308e2688ca6db994b3c89b976ad6b",
+      "canonical_url": "https://www.gao.gov/disaster-assistance",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_gao_public_domain_text",
+        "url": "https://www.gao.gov/copyright"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "disaster_climate",
+      "source_id": "us_gao",
+      "status": "pending_fetch",
+      "title": "Disaster Assistance"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_2e1795d9fea0e2918aaa35345586c083b338cf7fd063d0c8acf84ec4b7de1707",
+      "canonical_url": "https://www.gao.gov/cybersecurity",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_gao_public_domain_text",
+        "url": "https://www.gao.gov/copyright"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "cybersecurity",
+      "source_id": "us_gao",
+      "status": "pending_fetch",
+      "title": "GAO Cybersecurity"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_2896f5721e1c1b265478c1930e8f13e7502bff096ba3d1ed6b7170b71fc8651e",
+      "canonical_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bea_government_information",
+        "url": "https://www.bea.gov/help/faq/147"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "gdp",
+      "source_id": "us_bea",
+      "status": "pending_fetch",
+      "title": "Gross Domestic Product"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_a9d4ac528f9ff0c7aa3af4460aa9576c3a1c0cc82d1f101eba246ab31d370820",
+      "canonical_url": "https://www.bea.gov/data/income-saving/personal-income",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bea_government_information",
+        "url": "https://www.bea.gov/help/faq/147"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "income_outlays",
+      "source_id": "us_bea",
+      "status": "pending_fetch",
+      "title": "Personal Income and Outlays"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_58edaffa58144eaf0e81b8904499654cdbeeb133590ddcbdd842595591c23daf",
+      "canonical_url": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bea_government_information",
+        "url": "https://www.bea.gov/help/faq/147"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "trade",
+      "source_id": "us_bea",
+      "status": "pending_fetch",
+      "title": "International Trade in Goods and Services"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_385ca7abd79bc6eff88e8cad8d9e50aee6667042020f3cd4ad575d12c73f92c6",
+      "canonical_url": "https://www.bea.gov/data/intl-trade-investment/international-transactions",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bea_government_information",
+        "url": "https://www.bea.gov/help/faq/147"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "international_transactions",
+      "source_id": "us_bea",
+      "status": "pending_fetch",
+      "title": "International Transactions"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_53dc7a993d6947090441cd496c56e3b75a4078ee7c5cb8a8dd3e8cbc94d21ef7",
+      "canonical_url": "https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_bea_government_information",
+        "url": "https://www.bea.gov/help/faq/147"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "regional_accounts",
+      "source_id": "us_bea",
+      "status": "pending_fetch",
+      "title": "GDP for Counties and Metro Areas"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_a770bf9fbfc67a1b8b54fa17ac8d3090dcfaf35905ec07f858ffa027e511bd63",
+      "canonical_url": "https://www.census.gov/programs-surveys/popest.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_census_public_domain_text",
+        "url": "https://www.census.gov/about/policies/quality/copyright.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "population",
+      "source_id": "us_census",
+      "status": "pending_fetch",
+      "title": "Population Estimates"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_f922ec9cd1fbf4a9d6fd001619fd922352c4b5d08fdf4ef47d9dc723da34396c",
+      "canonical_url": "https://www.census.gov/programs-surveys/acs.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_census_public_domain_text",
+        "url": "https://www.census.gov/about/policies/quality/copyright.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "acs",
+      "source_id": "us_census",
+      "status": "pending_fetch",
+      "title": "American Community Survey"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_97fe7b1bd05aa553d19ba9d128d3c8dfbcac3f8de960f2741f849f99deab5120",
+      "canonical_url": "https://www.census.gov/topics/income-poverty.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_census_public_domain_text",
+        "url": "https://www.census.gov/about/policies/quality/copyright.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "income_poverty",
+      "source_id": "us_census",
+      "status": "pending_fetch",
+      "title": "Income and Poverty"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_20d96da78585580088696297829822dff2f8584bc6a58d2918b3a8b0e6e73b7c",
+      "canonical_url": "https://www.census.gov/retail/index.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_census_public_domain_text",
+        "url": "https://www.census.gov/about/policies/quality/copyright.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "retail_sales",
+      "source_id": "us_census",
+      "status": "pending_fetch",
+      "title": "Monthly Retail Trade"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_f25e35861805445792a3bd1a9493737c52130fb23b6b6aafe507439653ad6d8e",
+      "canonical_url": "https://www.census.gov/construction/nrs/index.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_census_public_domain_text",
+        "url": "https://www.census.gov/about/policies/quality/copyright.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "housing",
+      "source_id": "us_census",
+      "status": "pending_fetch",
+      "title": "New Residential Sales"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_74ae4783349752232271f337a62505bbec36e97b145f72b64cc2849f5a9d1bed",
+      "canonical_url": "https://www.cbo.gov/topics/budget",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cbo_public_information",
+        "url": "https://www.cbo.gov/about/privacy"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "budget_outlook",
+      "source_id": "us_cbo",
+      "status": "pending_fetch",
+      "title": "Budget and Economic Outlook"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_d743b879d5ecccb8df1c9bc3de88d23f4e58beab901303a87cad09eab84daadf",
+      "canonical_url": "https://www.cbo.gov/topics/budget/long-term-budget-outlook",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cbo_public_information",
+        "url": "https://www.cbo.gov/about/privacy"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "long_term_outlook",
+      "source_id": "us_cbo",
+      "status": "pending_fetch",
+      "title": "Long-Term Budget Outlook"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_4b47e1b6716a54d153855367a0101a9beb8935994c240a2e5c053a31e767592e",
+      "canonical_url": "https://www.cbo.gov/topics/budget/monthly-budget-review",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cbo_public_information",
+        "url": "https://www.cbo.gov/about/privacy"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "monthly_review",
+      "source_id": "us_cbo",
+      "status": "pending_fetch",
+      "title": "Monthly Budget Review"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_0ab03a2a99d6f1e6e94f0da6762d6842cc10c53d76b607f95de4f23cffe5bf1f",
+      "canonical_url": "https://www.cbo.gov/cost-estimates",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cbo_public_information",
+        "url": "https://www.cbo.gov/about/privacy"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "cost_estimate",
+      "source_id": "us_cbo",
+      "status": "pending_fetch",
+      "title": "Cost Estimates"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_f67ba5d987df09f00d4724a0b4196170b2568e4a4c63ad95428e573cc1cbccab",
+      "canonical_url": "https://www.cbo.gov/topics/health-care",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cbo_public_information",
+        "url": "https://www.cbo.gov/about/privacy"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "major_policy",
+      "source_id": "us_cbo",
+      "status": "pending_fetch",
+      "title": "Major Health Policy Reports"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_fe3255ea546db4b012c0272ce441878897cfc8d66c2ab3abbd531ad44cc190a9",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_federal_reserve_public_information",
+        "url": "https://www.federalreserve.gov/disclaimer.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "fomc_statement",
+      "source_id": "us_federal_reserve",
+      "status": "pending_fetch",
+      "title": "FOMC Statements"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_128f043468546e8077de34c91592dfa811c03ffb3fc0659e7d1ce906509ef33e",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/mpr_default.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_federal_reserve_public_information",
+        "url": "https://www.federalreserve.gov/disclaimer.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "monetary_policy",
+      "source_id": "us_federal_reserve",
+      "status": "pending_fetch",
+      "title": "Monetary Policy Report"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_e5e64f972c675aeae0cae8e0f20ff5e62b500cdb80c7b746cb41de5032e22679",
+      "canonical_url": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_federal_reserve_public_information",
+        "url": "https://www.federalreserve.gov/disclaimer.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "financial_stability",
+      "source_id": "us_federal_reserve",
+      "status": "pending_fetch",
+      "title": "Financial Stability Report"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_9547f542e716c664f611567feb2f7ef5841fa7dc10a3cf60c0e7c39071b67c7a",
+      "canonical_url": "https://www.federalreserve.gov/monetarypolicy/beige-book-default.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_federal_reserve_public_information",
+        "url": "https://www.federalreserve.gov/disclaimer.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "beige_book",
+      "source_id": "us_federal_reserve",
+      "status": "pending_fetch",
+      "title": "Beige Book"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_4f3e8498735ffb09cfee92fb0bad79fc3a5505b95e9d86782b76fd6201692286",
+      "canonical_url": "https://www.federalreserve.gov/releases/g17/current/default.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_federal_reserve_public_information",
+        "url": "https://www.federalreserve.gov/disclaimer.htm"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "industrial_production",
+      "source_id": "us_federal_reserve",
+      "status": "pending_fetch",
+      "title": "Industrial Production and Capacity Utilization"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_bb0a1755c9e339cecea2e315c55d66498dbcda8f651fae7e60c38d97d70116a9",
+      "canonical_url": "https://www.cdc.gov/mmwr/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cdc_public_domain_material",
+        "url": "https://www.cdc.gov/other/agencymaterials.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "mmwr",
+      "source_id": "us_cdc",
+      "status": "pending_fetch",
+      "title": "Morbidity and Mortality Weekly Report"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_26328a400e8779f0b69c20a2cda4121776757d714eb086dfc6448a426b2c1beb",
+      "canonical_url": "https://www.cdc.gov/nchs/products/nvsr.htm",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cdc_public_domain_material",
+        "url": "https://www.cdc.gov/other/agencymaterials.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "vital_statistics",
+      "source_id": "us_cdc",
+      "status": "pending_fetch",
+      "title": "National Vital Statistics Reports"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_e91a87c18247b17ba86d49634ec36958c9226b706b37b6174700b3fed3743dc2",
+      "canonical_url": "https://www.cdc.gov/respiratory-viruses/data/index.html",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cdc_public_domain_material",
+        "url": "https://www.cdc.gov/other/agencymaterials.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "respiratory_surveillance",
+      "source_id": "us_cdc",
+      "status": "pending_fetch",
+      "title": "Respiratory Virus Surveillance"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_171bbf35151dfedbedfe30626055f52f5c37db7470f338f16ca4818632f265aa",
+      "canonical_url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cdc_public_domain_material",
+        "url": "https://www.cdc.gov/other/agencymaterials.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "immunization",
+      "source_id": "us_cdc",
+      "status": "pending_fetch",
+      "title": "Immunization Schedules"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_9904820c46e32bc841f46848a2147f0c8d699f02a46bcfa8f29560a2ad755b6a",
+      "canonical_url": "https://www.cdc.gov/guidelines/",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_cdc_public_domain_material",
+        "url": "https://www.cdc.gov/other/agencymaterials.html"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "agency_guidance",
+      "source_id": "us_cdc",
+      "status": "pending_fetch",
+      "title": "CDC Guidance and Recommendations"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_6f591a9edfd73a1c038ddeaaff1f5c8d08f7b014b2a420d245d3bc26c8ed6e18",
+      "canonical_url": "https://www.sec.gov/about/reports-publications/annual-reports",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_sec_government_information",
+        "url": "https://www.sec.gov/about/privacy-information"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "annual_report",
+      "source_id": "us_sec",
+      "status": "pending_fetch",
+      "title": "SEC Annual Reports"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_fdfa4754ec0e8211d822466e64dbdf27775f68d5ada62f93e3e9d3dc51e9b52b",
+      "canonical_url": "https://www.sec.gov/enforcement-litigation",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_sec_government_information",
+        "url": "https://www.sec.gov/about/privacy-information"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "enforcement_results",
+      "source_id": "us_sec",
+      "status": "pending_fetch",
+      "title": "SEC Enforcement and Litigation"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_9a0f9f9650f653a6b225b588f1df840c318be94754c68a6cb9d1f89dda31a05f",
+      "canonical_url": "https://www.sec.gov/investor/alerts",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_sec_government_information",
+        "url": "https://www.sec.gov/about/privacy-information"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "investor_alert",
+      "source_id": "us_sec",
+      "status": "pending_fetch",
+      "title": "SEC Investor Alerts"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_a0cccdaf62fc84b77b91d422eae862199d684eddb6e5d80e3632e9c715f2b7d5",
+      "canonical_url": "https://www.sec.gov/marketstructure",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_sec_government_information",
+        "url": "https://www.sec.gov/about/privacy-information"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "market_report",
+      "source_id": "us_sec",
+      "status": "pending_fetch",
+      "title": "SEC Market Structure"
+    },
+    {
+      "archive_hash": null,
+      "canonical_document_id": "doc_c881ce0c2073f95f89ac730da1ff72e85bf5747c46486db01d26890bc7b7a89d",
+      "canonical_url": "https://www.sec.gov/rules-regulations",
+      "content_hash": null,
+      "etag": null,
+      "expected_point_count": 0,
+      "extraction_version": "pending_source_extraction",
+      "fetched_at": null,
+      "last_modified": null,
+      "published_at": null,
+      "refresh_after": "2026-07-12T00:00:00Z",
+      "retention_until": "2027-07-12T00:00:00Z",
+      "rights_basis": {
+        "id": "us_sec_government_information",
+        "url": "https://www.sec.gov/about/privacy-information"
+      },
+      "rights_review": {
+        "reviewed_at": null,
+        "reviewer": null,
+        "status": "pending",
+        "third_party_marked": false
+      },
+      "selection_status": "candidate_requires_latest_stable_document_freeze",
+      "source_family": "rule_release",
+      "source_id": "us_sec",
+      "status": "pending_fetch",
+      "title": "SEC Rules and Regulations"
+    }
+  ],
+  "embedding": {
+    "chunk_overlap_words": 50,
+    "chunk_words": 350,
+    "content_field": "chunk_text",
+    "distance": "cosine",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "vector_name": "content"
+  },
+  "manifest_hash": "50e0114d24a76fc5505d7f3e7d9a01e5c96bd093bb2a9d277e8bf6d2c090d749",
+  "manifest_id": "initial_40_document_candidate",
+  "policy_version": "trusted_sources/v2",
+  "review": {
+    "reviewed_at": null,
+    "reviewer": null,
+    "status": "pending"
+  },
+  "schema_version": "trusted_corpus_manifest/v1"
+}

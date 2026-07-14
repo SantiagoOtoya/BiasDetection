@@ -1,0 +1,690 @@
+{
+  "artifact_manifest_sha256": "d6eefc2a41f5c4cbeb6cea6043f03e665baf32fd05fda02f9e4ce61f28fa4ce6",
+  "calibration": {
+    "kind": "file",
+    "path": "models/all-mpnet-base-v2-babe-v3/best/calibration.json",
+    "sha256": "a93fa877553e7c1d45393de6128b10c5c04dbf3cdeda4ea524cc81c3d67f47e3"
+  },
+  "core": {
+    "files": {
+      "canonical_data_manifest": {
+        "kind": "file",
+        "path": "artifacts/production_v3_canonical_data_manifest.json",
+        "sha256": "f2428e58d6e47f446eb70255dfd01febe8c7be4d41d3036c225ddace06dab520"
+      },
+      "classification_heads": {
+        "kind": "file",
+        "path": "models/all-mpnet-base-v2-babe-v3/best/classification_heads.pt",
+        "sha256": "0933fc0ba048d26a37d6fe97c6d05bfff465b0a4fa1af60e8676b7c340ef3e34"
+      },
+      "code": [
+        {
+          "kind": "file",
+          "path": "artifact_manifest.py",
+          "sha256": "7259f1e7bb2dae15dc3bc649c3ba3d30af975fc7e2212b07b1030da6c7dd6bea"
+        },
+        {
+          "kind": "file",
+          "path": "data_pipeline.py",
+          "sha256": "61b41e42334b6bc2cde215283a10aafc53e52505d3559360715d5c61bc81fe3a"
+        },
+        {
+          "kind": "file",
+          "path": "evaluation.py",
+          "sha256": "cdc1273b6da10dd418e79c409e48aaef19b6bf204e28799a4519062cf6ad2af6"
+        },
+        {
+          "kind": "file",
+          "path": "finetune_all_mpnet_babe.py",
+          "sha256": "01bcb128b93c744c3be3db3bbb1cfd4d64c873e560686c61a0802374a1ff098b"
+        }
+      ],
+      "model": {
+        "excluded_relative_paths": [
+          "artifact_manifest.json",
+          "bias_label_mapping.json",
+          "calibration.json",
+          "classification_heads.pt",
+          "evaluation_scorecard.json",
+          "opinion_label_mapping.json",
+          "opinion_style_label_mapping.json",
+          "training_history.json",
+          "training_metadata.json"
+        ],
+        "kind": "directory",
+        "path": "models/all-mpnet-base-v2-babe-v3/best",
+        "sha256": "ab9b10f3c1f84488541329cacde2575a4c48ae172661004b796c0d161c70a9d4"
+      },
+      "split_manifest": {
+        "kind": "file",
+        "path": "artifacts/production_v3_split_manifest.json",
+        "sha256": "ff5ab742053c40ebf9d1db33872f175e1db3ab1d391e8f0a4e28a7bc4014f234"
+      }
+    },
+    "head_architecture": {
+      "bias_head": {
+        "dropout": 0.2,
+        "embedding_dim": 768,
+        "head_hidden_dim": 256,
+        "head_type": "binary_bias_logit_v1",
+        "implementation": "one_hidden_layer_mlp",
+        "logit_names": [
+          "bias_logit"
+        ],
+        "output_dim": 1,
+        "probability_transform": "sigmoid"
+      },
+      "dropout": 0.2,
+      "embedding_dim": 768,
+      "head_hidden_dim": 256,
+      "opinion_style_head": {
+        "dropout": 0.2,
+        "embedding_dim": 768,
+        "head_hidden_dim": 256,
+        "head_type": "binary_opinion_style_logit_v1",
+        "implementation": "one_hidden_layer_mlp",
+        "logit_names": [
+          "opinionated_style_logit"
+        ],
+        "output_dim": 1,
+        "probability_transform": "sigmoid"
+      }
+    },
+    "head_type": "independent_binary_heads_v1",
+    "label_mappings": {
+      "bias_label2id": {
+        "Biased": 1,
+        "Non-biased": 0
+      },
+      "opinion_style_label2id": {
+        "objective_style": 0,
+        "opinionated_style": 1
+      }
+    },
+    "source_summary": {
+      "cleaning_stats": {
+        "excluded": {
+          "empty_text": 0,
+          "global_duplicate": 3
+        },
+        "grouping_method_counts": {
+          "canonical_url": 4086,
+          "text_hash_fallback": 32
+        },
+        "input_rows": 4121,
+        "mbic_matched": 0,
+        "mbic_unmatched": 0,
+        "output_rows": 4118,
+        "source_counts": {
+          "BABE": 4118
+        }
+      },
+      "partition_summaries": {
+        "calibration": {
+          "bias_label_support": {
+            "0": 275,
+            "1": 345
+          },
+          "group_count": 130,
+          "opinion_label_support": {
+            "0": 189,
+            "1": 136,
+            "2": 138
+          },
+          "outlet_counts": {
+            "Alternet": 92,
+            "Breitbart": 139,
+            "Federalist": 49,
+            "Fox News": 42,
+            "HuffPost": 22,
+            "MSNBC": 42,
+            "Reuters": 169,
+            "The Daily Beast": 32,
+            "The Federalist": 2,
+            "USA Today": 31
+          },
+          "record_count": 620,
+          "source_counts": {
+            "BABE": 620
+          },
+          "split_unit_count": 130,
+          "topic_counts": {
+            "abortion": 11,
+            "black lives matter": 32,
+            "blm": 43,
+            "coronavirus": 16,
+            "elections-2020": 34,
+            "environment": 1,
+            "gender": 17,
+            "gun control": 32,
+            "gun-control": 34,
+            "immigration": 12,
+            "international-politics-and-world-news": 38,
+            "islam": 19,
+            "marriage-equality": 70,
+            "middle-class": 13,
+            "sport": 13,
+            "student-debt": 27,
+            "taxes": 35,
+            "trump-presidency": 27,
+            "universal health care": 38,
+            "vaccine": 30,
+            "vaccines": 19,
+            "white-nationalism": 59
+          }
+        },
+        "development": {
+          "bias_label_support": {
+            "0": 274,
+            "1": 345
+          },
+          "group_count": 88,
+          "opinion_label_support": {
+            "0": 150,
+            "1": 127,
+            "2": 129
+          },
+          "outlet_counts": {
+            "Alternet": 161,
+            "Breitbart": 151,
+            "Federalist": 18,
+            "Fox News": 12,
+            "HuffPost": 14,
+            "MSNBC": 20,
+            "Reuters": 99,
+            "The Daily Beast": 51,
+            "The Federalist": 33,
+            "The Guardian": 36,
+            "TheBlaze": 18,
+            "USA Today": 6
+          },
+          "record_count": 619,
+          "source_counts": {
+            "BABE": 619
+          },
+          "split_unit_count": 88,
+          "topic_counts": {
+            "abortion": 42,
+            "black lives matter": 30,
+            "blm": 70,
+            "coronavirus": 21,
+            "elections-2020": 10,
+            "environment": 46,
+            "gender": 33,
+            "gun control": 35,
+            "immigration": 36,
+            "islam": 36,
+            "marriage-equality": 68,
+            "middle-class": 16,
+            "sport": 11,
+            "student-debt": 21,
+            "taxes": 26,
+            "trump-presidency": 19,
+            "universal health care": 26,
+            "vaccine": 38,
+            "vaccines": 10,
+            "white-nationalism": 25
+          }
+        },
+        "locked_test": {
+          "bias_label_support": {
+            "0": 353,
+            "1": 471
+          },
+          "group_count": 335,
+          "opinion_label_support": {
+            "0": 322,
+            "1": 208,
+            "2": 204
+          },
+          "outlet_counts": {
+            "Alternet": 166,
+            "Breitbart": 179,
+            "Daily Beast": 15,
+            "Daily Stormer": 3,
+            "Federalist": 94,
+            "Fox News": 64,
+            "HuffPost": 23,
+            "Huffpost": 1,
+            "MSNBC": 65,
+            "New York Post": 4,
+            "New York Times": 1,
+            "Reuters": 163,
+            "The Daily Beast": 5,
+            "The Federalist": 4,
+            "UCSD Guardian": 1,
+            "USA Today": 36
+          },
+          "record_count": 824,
+          "source_counts": {
+            "BABE": 824
+          },
+          "split_unit_count": 335,
+          "topic_counts": {
+            "#metoo": 17,
+            "abortion": 21,
+            "black lives matter": 66,
+            "blm": 26,
+            "coronavirus": 25,
+            "elections-2020": 34,
+            "environment": 23,
+            "gender": 23,
+            "gun control": 45,
+            "gun-control": 24,
+            "immigration": 25,
+            "international-politics-and-world-news": 39,
+            "islam": 52,
+            "marriage-equality": 65,
+            "middle-class": 16,
+            "sport": 14,
+            "student-debt": 40,
+            "taxes": 51,
+            "trump-presidency": 18,
+            "universal health care": 70,
+            "vaccine": 64,
+            "vaccines": 40,
+            "white-nationalism": 26
+          }
+        },
+        "train": {
+          "bias_label_support": {
+            "0": 920,
+            "1": 1135
+          },
+          "group_count": 1712,
+          "opinion_label_support": {
+            "0": 938,
+            "1": 528,
+            "2": 385
+          },
+          "outlet_counts": {
+            "Alternet": 393,
+            "Breitbart": 503,
+            "Daily Beast": 20,
+            "Daily Stormer": 2,
+            "Federalist": 153,
+            "Fox News": 166,
+            "HuffPost": 71,
+            "Huffpost": 3,
+            "MSNBC": 159,
+            "New York Post": 10,
+            "New York Times": 7,
+            "Reuters": 402,
+            "The Daily Beast": 5,
+            "The Federalist": 10,
+            "UCSD Guardian": 7,
+            "USA Today": 144
+          },
+          "record_count": 2055,
+          "source_counts": {
+            "BABE": 2055
+          },
+          "split_unit_count": 1712,
+          "topic_counts": {
+            "#metoo": 25,
+            "abortion": 97,
+            "black lives matter": 172,
+            "blm": 26,
+            "coronavirus": 77,
+            "elections-2020": 63,
+            "environment": 109,
+            "gender": 72,
+            "gun control": 102,
+            "gun-control": 101,
+            "immigration": 86,
+            "international-politics-and-world-news": 43,
+            "islam": 130,
+            "marriage-equality": 153,
+            "middle-class": 83,
+            "sport": 90,
+            "student-debt": 48,
+            "taxes": 127,
+            "trump-presidency": 57,
+            "universal health care": 100,
+            "vaccine": 176,
+            "vaccines": 53,
+            "white-nationalism": 65
+          }
+        }
+      }
+    },
+    "training_configuration": {
+      "allow_legacy_calibration": false,
+      "article_id_column": null,
+      "batch_size": 16,
+      "best_validation_summary": {
+        "checkpoint_dir": "Bias Encoder\\models\\all-mpnet-base-v2-babe-v3\\best",
+        "development_metrics": {
+          "bias_biased_precision": 0.8203125,
+          "bias_biased_recall": 0.9130434782608695,
+          "bias_macro_f1": 0.8348492565912344,
+          "loss": 0.6989199749294891,
+          "opinion_style_macro_f1": 0.8364661654135338,
+          "opinion_style_objective_recall": 0.7333333333333333,
+          "opinion_style_opinionated_recall": 0.921875
+        },
+        "epoch": 4,
+        "monitor_metric": null,
+        "selection_value": [
+          0.8348492565912344,
+          0.8203125,
+          0.9130434782608695,
+          0.8364661654135338,
+          0.7333333333333333,
+          0.921875,
+          -0.6989199749294891
+        ],
+        "strategy": "multi_objective"
+      },
+      "bias_head_type": "binary_bias_logit_v1",
+      "bias_label_column": "label_bias",
+      "calibration_rows": 620,
+      "calibration_size": 0.15,
+      "canonical_data_manifest_path": "Bias Encoder\\artifacts\\production_v3_canonical_data_manifest.json",
+      "canonical_data_manifest_sha256": "5e2bf849a9dc0e54792b31752b18651f883c4f01c583a9caef90bd4a9f152e98",
+      "checkpoint_schema_version": "classification_heads/v3",
+      "checkpoint_selection": "multi_objective",
+      "class_weight_summary": {
+        "bias": [
+          1.1168478727340698,
+          0.9052863717079163
+        ],
+        "opinion_style": [
+          0.9866737723350525,
+          1.0136911869049072
+        ],
+        "weighting_source": "balanced"
+      },
+      "class_weighting": "balanced",
+      "classifier_input_contract": "target_sentence_marked/v1",
+      "classifier_mode": "production",
+      "cleaning_stats": {
+        "excluded": {
+          "empty_text": 0,
+          "global_duplicate": 3
+        },
+        "grouping_method_counts": {
+          "canonical_url": 4086,
+          "text_hash_fallback": 32
+        },
+        "input_rows": 4121,
+        "mbic_matched": 0,
+        "mbic_unmatched": 0,
+        "output_rows": 4118,
+        "source_counts": {
+          "BABE": 4118
+        }
+      },
+      "data_dir": "Bias Encoder\\BABE_HF",
+      "data_glob": [
+        "final_labels_*.csv"
+      ],
+      "dropout": 0.2,
+      "early_stopping_patience": 2,
+      "embedding_dim": 768,
+      "epochs": 4,
+      "event_column": null,
+      "final_test_metrics": null,
+      "freeze_embeddings": false,
+      "freeze_first_n_layers": 6,
+      "group_column": "news_link",
+      "head_hidden_dim": 256,
+      "head_type": "independent_binary_heads_v1",
+      "include_no_agreement": false,
+      "leakage_policy": "error",
+      "learning_rate": 2e-05,
+      "legacy_compatibility": false,
+      "max_grad_norm": 1.0,
+      "max_seq_length": 256,
+      "missing_label_policy": "mask",
+      "model_name": "sentence-transformers/all-mpnet-base-v2",
+      "monitor_metric": "bias_macro_f1",
+      "opinion_label_column": "label_opinion",
+      "opinion_sampling": "none",
+      "opinion_style_head_architecture": {
+        "dropout": 0.2,
+        "embedding_dim": 768,
+        "head_hidden_dim": 256,
+        "head_type": "binary_opinion_style_logit_v1",
+        "implementation": "one_hidden_layer_mlp",
+        "logit_names": [
+          "opinionated_style_logit"
+        ],
+        "output_dim": 1,
+        "probability_transform": "sigmoid"
+      },
+      "opinion_style_head_type": "binary_opinion_style_logit_v1",
+      "opinion_style_loss_weight": 0.3,
+      "opinion_style_target_mapping": {
+        "Entirely factual": "objective_style",
+        "Expresses writer's opinion": "opinionated_style",
+        "Somewhat factual but also opinionated": "opinionated_style"
+      },
+      "parameter_summary": {
+        "frozen": 42527232,
+        "total": 109486464,
+        "trainable": 66959232
+      },
+      "precision_confidence": 0.95,
+      "production_eligible": true,
+      "save_best_checkpoint": true,
+      "seed": 42,
+      "split_column": null,
+      "split_manifest_path": "Bias Encoder\\artifacts\\production_v3_split_manifest.json",
+      "split_manifest_sha256": "2186dce759cb763dabb43d1c7e1cba66123b24a2e46f7e6c2169a9c989e09069",
+      "split_strategy": "group",
+      "test_data_glob": null,
+      "test_rows": 824,
+      "test_size": 0.2,
+      "test_split_value": "test",
+      "train_data_glob": null,
+      "train_rows": 2055,
+      "train_split_value": "train",
+      "validation_rows": 619,
+      "validation_size": 0.15,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01
+    }
+  },
+  "document_sha256": "4834898ade08c7fe722ec48598e0c60f584fd061e52b641df7f2c6d356e699b2",
+  "frozen_artifact": {
+    "artifact_manifest_sha256": "d6eefc2a41f5c4cbeb6cea6043f03e665baf32fd05fda02f9e4ce61f28fa4ce6",
+    "calibration_path": "models/all-mpnet-base-v2-babe-v3/best/calibration.json",
+    "calibration_sha256": "a93fa877553e7c1d45393de6128b10c5c04dbf3cdeda4ea524cc81c3d67f47e3",
+    "frozen_artifact_sha256": "df00d6c209b884bbf704eba1a7c990c5e35fcdb480712cae7835284056f5f4dc",
+    "frozen_at_utc": "2026-07-13T00:43:16.359518Z",
+    "schema_version": "frozen_artifact/v1"
+  },
+  "locked_test_evaluation": {
+    "kind": "file",
+    "path": "artifacts/evaluations/all-mpnet-base-v2-babe-v3/locked_test_scorecard.json",
+    "sha256": "930b70c4c5c7856bc77b505b7c9a09b14948863c6b0813e04f0e8464de99e129"
+  },
+  "promotion_state": "eligible",
+  "release_gate_results": {
+    "acceptance_gate": {
+      "failures": [],
+      "passed": true,
+      "promotion_state": "eligible"
+    },
+    "bias": {
+      "accuracy": 0.8240291262135923,
+      "balanced_accuracy": 0.8198125860834942,
+      "confidence": 0.95,
+      "confusion_matrix": [
+        [
+          279,
+          74
+        ],
+        [
+          71,
+          400
+        ]
+      ],
+      "label_names": [
+        "not_biased",
+        "biased"
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "macro_f1": 0.8201509780457148,
+      "per_class": [
+        {
+          "f1": 0.7937411095305831,
+          "false_negative": 74,
+          "false_positive": 71,
+          "label": "not_biased",
+          "label_id": 0,
+          "precision": 0.7971428571428572,
+          "precision_wilson_lower_bound": 0.7595702519472715,
+          "predicted_support": 350,
+          "recall": 0.7903682719546742,
+          "recall_wilson_lower_bound": 0.7525913145972801,
+          "support": 353,
+          "true_positive": 279
+        },
+        {
+          "f1": 0.8465608465608466,
+          "false_negative": 71,
+          "false_positive": 74,
+          "label": "biased",
+          "label_id": 1,
+          "precision": 0.8438818565400844,
+          "precision_wilson_lower_bound": 0.8145161116645695,
+          "predicted_support": 474,
+          "recall": 0.8492569002123143,
+          "recall_wilson_lower_bound": 0.820148375124641,
+          "support": 471,
+          "true_positive": 400
+        }
+      ],
+      "pr_auc": 0.9299737147954432,
+      "pr_auc_definition": "average_precision",
+      "roc_auc": 0.914319481784883,
+      "support": 824,
+      "threshold": 0.5
+    },
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 42,
+    "clear_bias": {
+      "confidence": 0.95,
+      "coverage": 0.3616504854368932,
+      "false_negative": 182,
+      "false_positive": 9,
+      "positive_support": 471,
+      "precision": 0.9697986577181208,
+      "precision_wilson_lower_bound": 0.9487970057826663,
+      "recall": 0.613588110403397,
+      "recall_wilson_lower_bound": 0.5761345793715784,
+      "selected_count": 298,
+      "true_positive": 289
+    },
+    "confidence": 0.95,
+    "created_at_utc": "2026-07-13T00:48:43.515633Z",
+    "decision_state_coverage": {
+      "bias": {
+        "clear_bias": {
+          "count": 298,
+          "percentage": 0.3616504854368932
+        },
+        "no_clear_bias": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "possible_bias": {
+          "count": 526,
+          "percentage": 0.6383495145631068
+        }
+      },
+      "opinion_style": {
+        "objective_style": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "opinionated_style": {
+          "count": 276,
+          "percentage": 0.3760217983651226
+        },
+        "uncertain": {
+          "count": 458,
+          "percentage": 0.6239782016348774
+        }
+      }
+    },
+    "frozen_artifact_sha256": "df00d6c209b884bbf704eba1a7c990c5e35fcdb480712cae7835284056f5f4dc",
+    "gate_config_sha256": "37f2b9260511d89e8372f205b4c60fe12512c727415717b090cfb9e65da3f6c1",
+    "locked_test_partition_assignment_sha256": "3de4d6a64541e039dad4f931acd5bc3b96fbb5cd6d1e63a1e0f5f894eddca7fc",
+    "locked_test_rows": 824,
+    "opinion_style": {
+      "accuracy": 0.8337874659400545,
+      "balanced_accuracy": 0.8278583489115359,
+      "confidence": 0.95,
+      "confusion_matrix": [
+        [
+          251,
+          71
+        ],
+        [
+          51,
+          361
+        ]
+      ],
+      "label_names": [
+        "objective_style",
+        "opinionated_style"
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "macro_f1": 0.8299687082270021,
+      "macro_f1_bootstrap_lower_bound": 0.803884680299148,
+      "per_class": [
+        {
+          "f1": 0.8044871794871796,
+          "false_negative": 71,
+          "false_positive": 51,
+          "label": "objective_style",
+          "label_id": 0,
+          "precision": 0.8311258278145696,
+          "precision_wilson_lower_bound": 0.7927612451730246,
+          "predicted_support": 302,
+          "recall": 0.7795031055900621,
+          "recall_wilson_lower_bound": 0.7392589985576794,
+          "support": 322,
+          "true_positive": 251
+        },
+        {
+          "f1": 0.8554502369668245,
+          "false_negative": 51,
+          "false_positive": 71,
+          "label": "opinionated_style",
+          "label_id": 1,
+          "precision": 0.8356481481481481,
+          "precision_wilson_lower_bound": 0.8042478626013636,
+          "predicted_support": 432,
+          "recall": 0.8762135922330098,
+          "recall_wilson_lower_bound": 0.8470451267437183,
+          "support": 412,
+          "true_positive": 361
+        }
+      ],
+      "pr_auc": 0.9464682040377849,
+      "pr_auc_definition": "average_precision",
+      "roc_auc": 0.9272409998190918,
+      "support": 734,
+      "threshold": 0.5
+    },
+    "schema_version": "evaluation_scorecard/v2",
+    "targets": {
+      "clear_bias_precision_lcb": 0.9,
+      "minimum_evaluable_support": 30,
+      "objective_style_recall_lcb": 0.5,
+      "opinion_style_macro_f1_bootstrap_lcb": 0.65,
+      "opinionated_style_recall_lcb": 0.5
+    }
+  },
+  "schema_version": "artifact_manifest/v1"
+}
