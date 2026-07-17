@@ -57,6 +57,23 @@ function renderReport(result) {
   el.highlightButton.textContent = "Highlight on page";
   el.highlightButton.disabled = !hasSelections;
   showState("report");
+  renderRelevanceDebug(result.meta || {});
+}
+
+// Surface relevance-filter counts in the footer + console so we can verify
+// that irrelevant page furniture is being filtered (and article text is not).
+function renderRelevanceDebug(meta) {
+  const rel = meta.relevance;
+  if (!rel) return;
+  el.footerStatus.textContent =
+    rel.sentences_after_relevance_filter +
+    " relevant / " +
+    rel.total_sentences +
+    " scraped · " +
+    rel.sentences_removed_as_irrelevant +
+    " filtered";
+  console.debug("[BiasDetection] relevance filter:", rel);
+  console.debug("[BiasDetection] full analysis meta:", meta);
 }
 
 function renderScore(score, level, caption) {
@@ -183,6 +200,7 @@ async function runAnalysis() {
       text: scraped.text,
       title: scraped.title,
       url: scraped.url,
+      lead_text: scraped.leadText || "",
     });
 
     lastResult = result;

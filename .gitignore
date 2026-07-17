@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Assembled / downloaded models (rebuilt on first run)
+backend/models/
+models/
+
+# Model weight artifacts (downloaded from Hugging Face, never committed)
+model.safetensors
+classification_heads.pt
+*.safetensors
+*.pt
+
+# Inference outputs
+outputs/
+LLM-inference/outputs/
+
+# Local settings
+*.local

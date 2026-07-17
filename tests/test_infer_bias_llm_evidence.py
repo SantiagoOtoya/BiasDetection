@@ -9,17 +9,14 @@ from unittest import mock
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-LLM_DIR = PROJECT_ROOT / "LLM-inference"
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-if str(LLM_DIR) not in sys.path:
-    sys.path.insert(0, str(LLM_DIR))
 
 import evidence_retrieval
 
 
 def load_infer_module() -> types.ModuleType:
-    module_path = LLM_DIR / "infer_bias_llm.py"
+    module_path = PROJECT_ROOT / "infer_bias_llm.py"
     spec = importlib.util.spec_from_file_location("infer_bias_llm", module_path)
     if spec is None or spec.loader is None:
         raise RuntimeError("Could not load infer_bias_llm.py")

@@ -7,16 +7,39 @@
 //   { type: "HIGHLIGHT", sentences: [...] } -> handled in Phase 10 (no-op stub)
 
 const UNLIKELY_SELECTORS = [
-  "nav", "header", "footer", "aside", "form", "button",
+  "nav", "header", "footer", "aside", "form", "button", "iframe", "dialog",
   "[role='navigation']", "[role='banner']", "[role='complementary']",
+  "[role='dialog']", "[role='alertdialog']", "[aria-hidden='true']",
   ".nav", ".menu", ".sidebar", ".advert", ".ad", ".ads", ".promo",
-  ".newsletter", ".subscribe", ".social", ".share", ".related",
-  ".comments", ".comment", ".footer", ".header", ".breadcrumb",
-  ".cookie", ".paywall", ".recirc", "figure figcaption",
+  ".newsletter", ".subscribe", ".signup", ".social", ".share", ".related",
+  ".recommended", ".trending", ".popular", ".comments", ".comment",
+  ".footer", ".header", ".breadcrumb", ".cookie", ".modal", ".paywall",
+  ".recirc", ".sponsored", ".author-bio", ".bio", ".tags", ".taglist",
+  "figure figcaption",
 ];
+
+// Token-aware class/id keyword filter: matches "ad" in "ad-slot" or "top_ad"
+// but NOT inside words like "read", "header", or "shadow".
+const BOILERPLATE_TOKEN_RE = new RegExp(
+  "(^|[-_\\s])(" +
+    [
+      "ad", "ads", "advertisement", "advert", "sponsored", "sponsor", "promo",
+      "newsletter", "subscribe", "signup", "related", "recommended",
+      "recommendations", "trending", "popular", "comment", "comments",
+      "footer", "sidebar", "share", "social", "cookie", "consent", "modal",
+      "paywall", "outbrain", "taboola", "recirc", "breadcrumb", "masthead",
+    ].join("|") +
+    ")([-_\\s]|$)",
+  "i"
+);
 
 const POSITIVE_HINTS = /(article|content|post|story|entry|main|body|text|prose)/i;
 const NEGATIVE_HINTS = /(comment|meta|footer|footnote|nav|sidebar|sponsor|ad-|advert|promo|share|social|related|recirc|widget|caption|breadcrumb)/i;
+
+function isBoilerplateElement(node) {
+  const idClass = (node.id || "") + " " + (typeof node.className === "string" ? node.className : "");
+  return BOILERPLATE_TOKEN_RE.test(idClass);
+}
 
 function isVisible(node) {
   const style = window.getComputedStyle(node);
@@ -72,23 +95,38 @@ function collectCandidates() {
   });
 }
 
-// Extract clean paragraph text from the chosen container.
-function extractText(container) {
+// Extract clean paragraph text (and the lead paragraph) from the chosen container.
+function extractContent(container) {
   const clone = container.cloneNode(true);
   clone.querySelectorAll(UNLIKELY_SELECTORS.join(",")).forEach((n) => n.remove());
-  clone.querySelectorAll("script, style, noscript, svg").forEach((n) => n.remove());
+  clone.querySelectorAll("script, style, noscript, svg, template").forEach((n) => n.remove());
+  // Aggressive pass: remove anything whose class/id matches boilerplate keywords.
+  clone.querySelectorAll("*").forEach((n) => {
+    if (isBoilerplateElement(n)) n.remove();
+  });
 
   const blocks = [];
+  let leadParagraph = "";
   clone.querySelectorAll("p, li, blockquote, h2, h3").forEach((node) => {
     const text = (node.textContent || "").replace(/\s+/g, " ").trim();
-    if (text.length >= 25) blocks.push(text);
+    if (text.length < 25) return;
+    // Skip link/button-heavy blocks (menus, tag lists, "read more" clusters).
+    if (linkDensity(node) > 0.5) return;
+    if (node.querySelectorAll("button, input, select").length > 0) return;
+    blocks.push(text);
+    if (!leadParagraph && node.tagName === "P" && text.length >= 60) {
+      leadParagraph = text;
+    }
   });
 
   // Fallback: if the structured pass found little, use the raw text.
   if (blocks.join(" ").length < 200) {
-    return (clone.textContent || "").replace(/\s+/g, " ").trim();
+    return {
+      text: (clone.textContent || "").replace(/\s+/g, " ").trim(),
+      leadParagraph,
+    };
   }
-  return blocks.join("\n\n");
+  return { text: blocks.join("\n\n"), leadParagraph };
 }
 
 function getArticleTitle() {
@@ -108,26 +146,48 @@ function scrapeArticle() {
   const candidates = collectCandidates();
   let best = null;
   let bestScore = -Infinity;
+  let bestArticle = null;
+  let bestArticleScore = -Infinity;
   candidates.forEach((node) => {
     const score = scoreCandidate(node);
     if (score > bestScore) {
       bestScore = score;
       best = node;
     }
+    if (node.tagName === "ARTICLE" && score > bestArticleScore) {
+      bestArticleScore = score;
+      bestArticle = node;
+    }
   });
 
-  const container = best || document.body;
-  let text = extractText(container);
+  // Prefer a real <article> element when it holds comparable content: sidebars
+  // and recirculation grids sometimes out-score it on raw paragraph count.
+  let container = best || document.body;
+  if (
+    bestArticle &&
+    bestArticle !== best &&
+    bestArticleScore >= bestScore * 0.5 &&
+    (bestArticle.textContent || "").trim().length >= 500
+  ) {
+    container = bestArticle;
+  }
+
+  const title = getArticleTitle();
+  let { text, leadParagraph } = extractContent(container);
 
   // Absolute fallback so we never return empty on a text-bearing page.
   if (!text || text.length < 120) {
     text = (document.body.textContent || "").replace(/\s+/g, " ").trim();
   }
 
+  // Topic anchor for the backend relevance filter: headline + first real paragraph.
+  const leadText = [title, leadParagraph].filter(Boolean).join(". ").slice(0, 600);
+
   return {
     ok: text.length > 0,
-    title: getArticleTitle(),
+    title,
     text,
+    leadText,
     url: location.href,
     sentenceCount: countSentences(text),
   };
