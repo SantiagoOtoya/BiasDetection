@@ -1,0 +1,9 @@
+{
+  "completed_at_utc": "2026-07-13T00:48:43.515633Z",
+  "frozen_artifact_sha256": "df00d6c209b884bbf704eba1a7c990c5e35fcdb480712cae7835284056f5f4dc",
+  "promotion_state": "eligible",
+  "schema_version": "locked_test_once/v1",
+  "scorecard_sha256": "930b70c4c5c7856bc77b505b7c9a09b14948863c6b0813e04f0e8464de99e129",
+  "started_at_utc": "2026-07-13T00:48:39.157051Z",
+  "status": "complete"
+}

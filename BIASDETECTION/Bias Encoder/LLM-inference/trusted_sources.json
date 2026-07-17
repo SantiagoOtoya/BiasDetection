@@ -1,0 +1,227 @@
+{
+  "version": "trusted_sources/v2",
+  "official_suffixes": [
+    ".gov",
+    ".mil"
+  ],
+  "primary_official_domains": [
+    "bea.gov",
+    "bls.gov",
+    "cdc.gov",
+    "census.gov",
+    "cbo.gov",
+    "federalreserve.gov",
+    "gao.gov",
+    "sec.gov"
+  ],
+  "empirical_research_domains": [
+    "academic.oup.com",
+    "acpjournals.org",
+    "annualreviews.org",
+    "arxiv.org",
+    "bmj.com",
+    "cambridge.org",
+    "cell.com",
+    "cochranelibrary.com",
+    "doi.org",
+    "jamanetwork.com",
+    "journals.plos.org",
+    "nature.com",
+    "nber.org",
+    "nejm.org",
+    "ncbi.nlm.nih.gov",
+    "pnas.org",
+    "pubmed.ncbi.nlm.nih.gov",
+    "science.org",
+    "sciencedirect.com",
+    "springer.com",
+    "ssrn.com",
+    "thelancet.com",
+    "wiley.com"
+  ],
+  "wire_service_domains": [
+    "apnews.com",
+    "reuters.com"
+  ],
+  "corpus_registry": {
+    "schema_version": "trusted_corpus_sources/v2",
+    "sources": [
+      {
+        "source_id": "us_bls",
+        "source_name": "U.S. Bureau of Labor Statistics",
+        "domains": ["bls.gov"],
+        "allowed_url_prefixes": ["https://www.bls.gov/", "https://bls.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_bls_public_domain_text",
+          "basis_url": "https://www.bls.gov/opub/copyright-information.htm",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["third-party photographs", "third-party charts", "licensed material"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_gao",
+        "source_name": "U.S. Government Accountability Office",
+        "domains": ["gao.gov"],
+        "allowed_url_prefixes": ["https://www.gao.gov/", "https://gao.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_gao_public_domain_text",
+          "basis_url": "https://www.gao.gov/copyright",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["copyrighted images", "material credited to another source"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_bea",
+        "source_name": "U.S. Bureau of Economic Analysis",
+        "domains": ["bea.gov"],
+        "allowed_url_prefixes": ["https://www.bea.gov/", "https://bea.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_bea_government_information",
+          "basis_url": "https://www.bea.gov/help/faq/147",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["third-party material", "BEA logo and marks"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_census",
+        "source_name": "U.S. Census Bureau",
+        "domains": ["census.gov"],
+        "allowed_url_prefixes": ["https://www.census.gov/", "https://census.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_census_public_domain_text",
+          "basis_url": "https://www.census.gov/about/policies/quality/copyright.html",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["third-party photographs", "licensed maps", "trademarked material"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_cbo",
+        "source_name": "Congressional Budget Office",
+        "domains": ["cbo.gov"],
+        "allowed_url_prefixes": ["https://www.cbo.gov/", "https://cbo.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_cbo_public_information",
+          "basis_url": "https://www.cbo.gov/about/privacy",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["third-party material", "externally licensed data"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_federal_reserve",
+        "source_name": "Board of Governors of the Federal Reserve System",
+        "domains": ["federalreserve.gov"],
+        "allowed_url_prefixes": ["https://www.federalreserve.gov/", "https://federalreserve.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_federal_reserve_public_information",
+          "basis_url": "https://www.federalreserve.gov/disclaimer.htm",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["third-party copyrighted material", "Federal Reserve marks"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_cdc",
+        "source_name": "Centers for Disease Control and Prevention",
+        "domains": ["cdc.gov"],
+        "allowed_url_prefixes": ["https://www.cdc.gov/", "https://cdc.gov/"],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_cdc_public_domain_material",
+          "basis_url": "https://www.cdc.gov/other/agencymaterials.html",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["licensed journal content", "third-party photographs", "CDC marks"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "us_sec",
+        "source_name": "U.S. Securities and Exchange Commission",
+        "domains": ["sec.gov"],
+        "allowed_url_prefixes": ["https://www.sec.gov/", "https://sec.gov/"],
+        "excluded_url_prefixes": [
+          "https://www.sec.gov/Archives/edgar/data/",
+          "https://www.sec.gov/Archives/edgar/vprr/",
+          "https://www.sec.gov/ixviewer/",
+          "https://www.sec.gov/ix?doc="
+        ],
+        "source_tier": "primary_official",
+        "fetch_allowed": true,
+        "ingest_allowed": true,
+        "rights": {
+          "id": "us_sec_government_information",
+          "basis_url": "https://www.sec.gov/about/privacy-information",
+          "redistribution_allowed": true
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["all EDGAR company filings", "third-party exhibits", "SEC marks"],
+        "retention": {"policy": "review_after_365_days", "days": 365}
+      },
+      {
+        "source_id": "ap_news",
+        "source_name": "Associated Press",
+        "domains": ["apnews.com"],
+        "allowed_url_prefixes": ["https://apnews.com/", "https://www.apnews.com/"],
+        "source_tier": "wire_service",
+        "fetch_allowed": false,
+        "ingest_allowed": false,
+        "rights": {
+          "id": "restricted_commercial_content",
+          "basis_url": "https://www.ap.org/terms-and-conditions/",
+          "redistribution_allowed": false
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["all article content"],
+        "retention": {"policy": "do_not_retain", "days": 1}
+      },
+      {
+        "source_id": "reuters",
+        "source_name": "Reuters",
+        "domains": ["reuters.com"],
+        "allowed_url_prefixes": ["https://www.reuters.com/", "https://reuters.com/"],
+        "source_tier": "wire_service",
+        "fetch_allowed": false,
+        "ingest_allowed": false,
+        "rights": {
+          "id": "restricted_commercial_content",
+          "basis_url": "https://www.reuters.com/legal/",
+          "redistribution_allowed": false
+        },
+        "per_document_rights_review": {"required": true},
+        "excluded_material": ["all article content"],
+        "retention": {"policy": "do_not_retain", "days": 1}
+      }
+    ]
+  }
+}
