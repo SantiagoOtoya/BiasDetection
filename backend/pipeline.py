@@ -167,14 +167,12 @@ def build_analyzer(mode: str) -> Analyzer:
         return MockAnalyzer()
 
     if normalized in ("gpu", "cpu", "prompt-only", "prompt_only"):
-        from real_pipeline import RealAnalyzer
-
         canonical = "prompt-only" if normalized in ("prompt-only", "prompt_only") else normalized
-        return RealAnalyzer(
+        stack = _env_model_stack()
+
+        common_kwargs = dict(
             mode=canonical,
-            selection_mode=_env_selection_mode(),
             enable_evidence=_env_flag("ENABLE_EVIDENCE", default=False),
-            evidence_provider=os.environ.get("EVIDENCE_PROVIDER", "brave"),
             max_evidence_items=_env_int("MAX_EVIDENCE_ITEMS", 5),
             evidence_timeout_seconds=_env_float("EVIDENCE_TIMEOUT_SECONDS", 10.0),
             enable_relevance=_env_flag("ENABLE_RELEVANCE", default=True),
@@ -182,8 +180,31 @@ def build_analyzer(mode: str) -> Analyzer:
             relevance_threshold=_env_float("RELEVANCE_THRESHOLD", 0.18),
         )
 
+        if stack == "v3":
+            from v3_adapter import V3Analyzer
+
+            return V3Analyzer(
+                include_possible_bias=_env_flag("INCLUDE_POSSIBLE_BIAS", default=False),
+                **common_kwargs,
+            )
+
+        from real_pipeline import RealAnalyzer
+
+        return RealAnalyzer(
+            selection_mode=_env_selection_mode(),
+            evidence_provider=os.environ.get("EVIDENCE_PROVIDER", "brave"),
+            **common_kwargs,
+        )
+
     # Unknown mode: keep the server usable rather than failing to start.
     return MockAnalyzer()
+
+
+def _env_model_stack() -> str:
+    stack = os.environ.get("MODEL_STACK", "v2").strip().lower()
+    if stack in ("v2", "v3"):
+        return stack
+    return "v2"
 
 
 def _env_flag(name: str, default: bool = False) -> bool:

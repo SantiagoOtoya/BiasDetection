@@ -297,6 +297,48 @@ def check_claims_with_evidence(
     return _sanitize_items(items, max_items=max(1, len(reviewed_sentences)) + 2)
 
 
+# --- v3 evidence-assessment bridge ------------------------------------------
+#
+# The v3 stack's evidence_assessment module already produces per-claim
+# assessments (supported / contradicted / insufficient_evidence, plus
+# not_verifiable for claims that cannot be checked). Map those onto the
+# extension's fact-check enum. Per project decision the mapping never emits
+# "false": contradicted becomes "disputed".
+
+V3_STATUS_MAP = {
+    "supported": FactStatus.verified,
+    "contradicted": FactStatus.disputed,
+    "insufficient_evidence": FactStatus.unverified,
+    "not_verifiable": FactStatus.unverified,
+}
+
+
+def map_assessor_status(status: Any) -> FactStatus:
+    return V3_STATUS_MAP.get(str(status or "").strip().lower(), FactStatus.unverified)
+
+
+def fact_checks_from_v3_claims(claim_records: list[Any], max_items: int = 24) -> list[FactCheck]:
+    """Convert v3 ClaimAssessment JSON records into extension FactCheck entries."""
+    checks: list[FactCheck] = []
+    for item in claim_records:
+        if not isinstance(item, dict):
+            continue
+        claim = str(item.get("claim", "")).strip()
+        if not claim:
+            continue
+        checks.append(
+            FactCheck(
+                claim=claim[:280],
+                status=map_assessor_status(item.get("evidence_status")),
+                rationale=str(item.get("rationale", "")).strip()[:280],
+                evidence_ids=_coerce_evidence_ids(item.get("citation_ids")),
+            )
+        )
+        if len(checks) >= max_items:
+            break
+    return checks
+
+
 def _fallback_evidence_prompt_items(evidence_items: list[Any]) -> list[dict[str, Any]]:
     prompt_items: list[dict[str, Any]] = []
     for index, item in enumerate(evidence_items, start=1):

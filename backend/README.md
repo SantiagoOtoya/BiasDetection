@@ -56,6 +56,32 @@ python -m uvicorn server:app --host 0.0.0.0 --port 8000
 (point the extension's Backend URL at `http://<gpu-machine-ip>:8000`) or via a
 tunnel.
 
+## Model stacks (`MODEL_STACK` env var)
+
+Two inference stacks coexist in the repo and share module names, so exactly one
+is loaded per process (enforced by `stack_loader.py`):
+
+| `MODEL_STACK` | Stack | Model | Selection |
+|---------------|-------|-------|-----------|
+| `v2` (default) | repo-root modules | assembled HF v2 encoder + 4-class heads | argmax / threshold |
+| `v3` | `BIASDETECTION/Bias Encoder` handoff | v3 encoder (auto-downloaded from `BiLSTM/BIASDETECTION_`) + scalar heads | strict calibrated: `clear_bias` / `possible_bias` / `no_clear_bias` |
+
+v3 notes:
+- First run downloads `model.safetensors` (~438 MB) into the handoff model dir;
+  the strict loader then verifies the manifest's directory-composite SHA-256 and
+  **refuses to run** on any mismatch — the wrong model can never load silently.
+- Only `clear_bias` sentences are selected by default (locked-test precision
+  0.97). Set `INCLUDE_POSSIBLE_BIAS=true` to also include `possible_bias`.
+- Responses add `bias_assessment`, `opinion_style`, `uncertainty_status` per
+  selected sentence and `meta.stack: "v3"`.
+- Evidence (web mode via Brave) needs `ENABLE_EVIDENCE=true` plus
+  `BRAVE_SEARCH_API_KEY` and `CORPUS_FETCH_CONTACT`; claim assessments map to
+  the fact list as supported→verified, contradicted→disputed,
+  insufficient→unverified (never "false"). Corpus/Qdrant mode is not wired yet.
+- The `BIASDETECTION/**` handoff is byte-exact: a root `.gitattributes` marks it
+  `-text` so git never rewrites line endings (the handoff's SHA-256 manifests
+  hash raw bytes).
+
 ## Selection mode (calibrated abstention)
 
 Sentence selection reuses the inference module's calibrated confidence gate:

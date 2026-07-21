@@ -31,7 +31,6 @@ from __future__ import annotations
 
 import json
 import logging
-import sys
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -44,21 +43,15 @@ from schemas import AnalyzeRequest, AnalyzeResponse, SelectedSentence
 
 LOGGER = logging.getLogger("bias_backend.real_pipeline")
 
-# The inference code now lives at the repo root (moved out of LLM-inference/).
-# Root is the single source of truth; we do not depend on LLM-inference/ anymore.
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+# This module is the **v2** analyzer. The v2 inference code lives at the repo
+# root; the v3 production stack lives under BIASDETECTION/ and is served by
+# backend/v3_adapter.py. Exactly one stack may be active per process, enforced
+# by stack_loader (module names collide between stacks).
+import stack_loader
 
-if not (PROJECT_ROOT / "infer_bias_llm.py").exists():
-    raise ImportError(
-        f"Expected infer_bias_llm.py at the repo root ({PROJECT_ROOT}). "
-        "It was moved out of LLM-inference/; update the checkout."
-    )
-
-# Reuse the existing inference modules (unmodified).
-import evidence_retrieval  # noqa: E402
-import infer_bias_llm as infer  # noqa: E402
+_STACK = stack_loader.load_stack("v2")
+infer = _STACK.infer
+evidence_retrieval = _STACK.evidence_retrieval
 
 
 class RealAnalyzer(Analyzer):

@@ -53,6 +53,16 @@ class SelectedSentence(BaseModel):
     # Calibrated-selection provenance (empty when running legacy argmax).
     selection_reasons: list[str] = Field(default_factory=list)
     abstention_reasons: list[str] = Field(default_factory=list)
+    # v3 production-stack decision states (None when running the v2 stack).
+    bias_assessment: Optional[str] = Field(
+        default=None, description="v3: no_clear_bias | possible_bias | clear_bias"
+    )
+    opinion_style: Optional[str] = Field(
+        default=None, description="v3: objective_style | uncertain | opinionated_style"
+    )
+    uncertainty_status: Optional[str] = Field(
+        default=None, description="v3: confident | uncertain"
+    )
 
 
 class FactCheck(BaseModel):

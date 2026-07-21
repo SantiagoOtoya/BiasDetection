@@ -194,6 +194,58 @@ def resolve_checkpoint(
     return build_assembled_checkpoint(assembled_dir=assembled_dir, force=force)
 
 
+# --- v3 production checkpoint (BIASDETECTION handoff) ------------------------
+
+V3_REPO_ID = "BiLSTM/BIASDETECTION_"
+V3_WEIGHTS_FILE = "model.safetensors"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+V3_MODEL_DIR = (
+    PROJECT_ROOT
+    / "BIASDETECTION"
+    / "Bias Encoder"
+    / "models"
+    / "all-mpnet-base-v2-babe-v3"
+    / "best"
+)
+
+
+def resolve_v3_checkpoint() -> tuple[Path, Path]:
+    """Ensure the v3 handoff model dir is complete; return ``(model_dir, heads_path)``.
+
+    The handoff ships everything except the encoder weights, which the v3
+    release publishes at ``BiLSTM/BIASDETECTION_``. The weights MUST be placed
+    inside the handoff's own ``best/`` directory (not an assembled copy): the
+    strict loader's artifact binding resolves the manifest's model path against
+    the v3 project root and verifies a directory-composite SHA-256 there —
+    a relocated copy can never pass. The downloaded file is covered by the
+    repo's ``*.safetensors`` gitignore rule, so git stays clean.
+
+    Integrity: the strict artifact binding (``verify_files=True``) recomputes
+    the composite hash over the completed directory and compares it to the
+    manifest's ``model_sha256`` — the load fails loudly on any mismatch, so a
+    wrong or corrupted weights file cannot silently run.
+    """
+    if not V3_MODEL_DIR.exists():
+        raise FileNotFoundError(
+            f"v3 model directory not found: {V3_MODEL_DIR}. "
+            "The BIASDETECTION handoff must be present to use MODEL_STACK=v3."
+        )
+    heads_path = V3_MODEL_DIR / "classification_heads.pt"
+    if not heads_path.exists():
+        raise FileNotFoundError(f"v3 classification heads not found: {heads_path}")
+
+    weights_path = V3_MODEL_DIR / V3_WEIGHTS_FILE
+    if not weights_path.exists():
+        from huggingface_hub import hf_hub_download
+
+        LOGGER.info("Downloading v3 encoder weights from %s", V3_REPO_ID)
+        downloaded = hf_hub_download(V3_REPO_ID, V3_WEIGHTS_FILE, token=_hf_token())
+        shutil.copy2(downloaded, weights_path)
+        LOGGER.info("Placed v3 weights at %s", weights_path)
+
+    return V3_MODEL_DIR, heads_path
+
+
 if __name__ == "__main__":
     logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s", level=logging.INFO)
     model_dir, heads = resolve_checkpoint()

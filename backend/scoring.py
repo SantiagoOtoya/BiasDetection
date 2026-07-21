@@ -33,11 +33,23 @@ PEAK_FRACTION = 0.15
 
 
 def sentence_signal(bias_probabilities: dict[str, float], opinion_probabilities: dict[str, float]) -> float:
-    """Per-sentence bias intensity in [0, 1]."""
+    """Per-sentence bias intensity in [0, 1] (v2 stack: label-keyed probabilities)."""
     biased = float(bias_probabilities.get(BIAS_POSITIVE_LABEL, 0.0))
     factual = float(opinion_probabilities.get(OPINION_FACTUAL_LABEL, 0.0))
     non_factual = max(0.0, 1.0 - factual)
     signal = BIAS_WEIGHT * biased + OPINION_WEIGHT * non_factual
+    return min(1.0, max(0.0, signal))
+
+
+def sentence_signal_v3(p_bias: float | None, p_opinionated_style: float | None) -> float:
+    """Per-sentence bias intensity in [0, 1] (v3 stack: calibrated scalar heads).
+
+    v3's binary heads expose ``p_bias`` and ``p_opinionated_style`` directly, so
+    the blend uses them verbatim with the same weights as the v2 signal.
+    """
+    biased = float(p_bias or 0.0)
+    opinionated = float(p_opinionated_style or 0.0)
+    signal = BIAS_WEIGHT * biased + OPINION_WEIGHT * opinionated
     return min(1.0, max(0.0, signal))
 
 
