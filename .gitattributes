@@ -1,0 +1,4 @@
+# The BIASDETECTION handoff is a byte-exact artifact drop: its SHA-256
+# manifests (SHA256SUMS.txt, artifact_manifest.json) hash raw bytes, so git
+# must never rewrite line endings inside it.
+BIASDETECTION/** -text
