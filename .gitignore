@@ -17,7 +17,6 @@ classification_heads.pt
 
 # Inference outputs
 outputs/
-LLM-inference/outputs/
 
 # Local settings
 *.local
