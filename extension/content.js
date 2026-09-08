@@ -41,13 +41,78 @@ function isBoilerplateElement(node) {
   return BOILERPLATE_TOKEN_RE.test(idClass);
 }
 
-function isVisible(node) {
-  const style = window.getComputedStyle(node);
-  if (style.display === "none" || style.visibility === "hidden" || style.opacity === "0") {
-    return false;
+// --- Phase 1 hardening: live-DOM UI/modal/overlay rejection ---
+//
+// Style + geometry checks MUST run on live (attached) nodes, so extraction
+// evaluates the real DOM rather than a detached clone. Computed styles are
+// memoized per scrape to keep the extra getComputedStyle calls cheap.
+
+const MODAL_SELECTOR =
+  "[role='dialog'],[role='alertdialog'],[aria-modal='true'],dialog," +
+  ".modal,.popup,.overlay,.lightbox,.subscribe,.subscription,.newsletter," +
+  ".paywall,.consent,.cookie,.cookies,.gdpr,.notification,.signin,.signup,.login";
+
+const MIN_PROSE_CHARS = 250;
+const MIN_PROSE_SENTENCES = 2;
+const OVERLAY_AREA_FRACTION = 0.35; // fixed/absolute box covering >=35% viewport
+const OVERLAY_MIN_ZINDEX = 100;
+
+let _styleCache = new WeakMap();
+function getStyle(node) {
+  let s = _styleCache.get(node);
+  if (!s) {
+    s = window.getComputedStyle(node);
+    _styleCache.set(node, s);
   }
+  return s;
+}
+
+function isVisible(node) {
+  return !isHidden(node);
+}
+
+// Hidden via ARIA/attribute/style/geometry, including common hidden ancestors.
+function isHidden(node) {
+  if (node.closest && node.closest("[aria-hidden='true'],[hidden]")) return true;
+  const style = getStyle(node);
+  if (style.display === "none") return true;
+  if (style.visibility === "hidden" || style.visibility === "collapse") return true;
+  if (parseFloat(style.opacity || "1") === 0) return true;
   const rect = node.getBoundingClientRect();
-  return rect.width > 0 || rect.height > 0 || node.getClientRects().length > 0;
+  // Zero-size / sr-only clipped (e.g. width:1px;height:1px;clip:rect(0,0,0,0)).
+  if (rect.width <= 1 && rect.height <= 1) return true;
+  // Horizontally off-screen ("left:-9999px" pattern). Vertical offsets are NOT
+  // treated as hidden — that would wrongly drop normally-scrolled content.
+  if (rect.right < 0 || rect.left > window.innerWidth + 4000) return true;
+  return false;
+}
+
+// Nearest fixed/absolute overlay ancestor (class-name independent), walking up
+// to but not including stopEl. Sticky is intentionally NOT treated as overlay,
+// so legitimate sticky article elements are preserved in Phase 1.
+function overlayAncestor(node, stopEl) {
+  const vwArea = (window.innerWidth * window.innerHeight) || 1;
+  let el = node;
+  while (el && el !== document.body && el !== stopEl) {
+    const style = getStyle(el);
+    const pos = style.position;
+    if (pos === "fixed" || pos === "absolute") {
+      const rect = el.getBoundingClientRect();
+      const area = rect.width * rect.height;
+      const big = area >= OVERLAY_AREA_FRACTION * vwArea;
+      const z = parseInt(style.zIndex, 10);
+      const highZ = Number.isFinite(z) && z >= OVERLAY_MIN_ZINDEX;
+      const hasForm = !!el.querySelector("form, input, button");
+      if (pos === "fixed" && (big || (highZ && hasForm))) return el;
+      if (pos === "absolute" && big && highZ) return el;
+    }
+    el = el.parentElement;
+  }
+  return null;
+}
+
+function hasModalAncestor(node) {
+  return !!(node.closest && node.closest(MODAL_SELECTOR));
 }
 
 function linkDensity(node) {
@@ -89,43 +154,44 @@ function collectCandidates() {
     document.querySelectorAll(sel).forEach((node) => set.add(node));
   });
   return Array.from(set).filter((node) => {
-    if (!isVisible(node)) return false;
+    if (isHidden(node)) return false;
+    if (hasModalAncestor(node)) return false; // never pick a modal as the root
+    if (overlayAncestor(node, document.body)) return false; // nor an overlay layer
     const text = (node.textContent || "").trim();
     return text.length >= 200; // ignore tiny containers
   });
 }
 
-// Extract clean paragraph text (and the lead paragraph) from the chosen container.
-function extractContent(container) {
-  const clone = container.cloneNode(true);
-  clone.querySelectorAll(UNLIKELY_SELECTORS.join(",")).forEach((n) => n.remove());
-  clone.querySelectorAll("script, style, noscript, svg, template").forEach((n) => n.remove());
-  // Aggressive pass: remove anything whose class/id matches boilerplate keywords.
-  clone.querySelectorAll("*").forEach((n) => {
-    if (isBoilerplateElement(n)) n.remove();
-  });
+// Why a live block was rejected, or null if it is acceptable prose. Evaluated
+// on the LIVE node so style/geometry/ancestry checks work. Order matters only
+// for the (Phase 2) diagnostics; behavior is a logical OR.
+function blockRejectReason(node, root) {
+  if (isHidden(node)) return "hidden_content";
+  if (hasModalAncestor(node)) return "modal_ancestor";
+  if (overlayAncestor(node, root)) return "ui_positioning";
+  if (isBoilerplateElement(node) || (node.closest && node.closest(UNLIKELY_SELECTORS.join(",")))) {
+    return "boilerplate_text";
+  }
+  if (linkDensity(node) > 0.5) return "high_link_density";
+  if (node.querySelector("button, input, select, textarea")) return "form_controls";
+  return null;
+}
 
+// Collect clean prose from LIVE block nodes contained within `root`. No clone,
+// no raw-textContent path — only blocks that survive the UI/modal/overlay/hidden
+// checks contribute text, so unfiltered container text can never escape.
+function collectProse(root) {
   const blocks = [];
   let leadParagraph = "";
-  clone.querySelectorAll("p, li, blockquote, h2, h3").forEach((node) => {
+  root.querySelectorAll("p, li, blockquote, h2, h3").forEach((node) => {
     const text = (node.textContent || "").replace(/\s+/g, " ").trim();
     if (text.length < 25) return;
-    // Skip link/button-heavy blocks (menus, tag lists, "read more" clusters).
-    if (linkDensity(node) > 0.5) return;
-    if (node.querySelectorAll("button, input, select").length > 0) return;
+    if (blockRejectReason(node, root)) return;
     blocks.push(text);
     if (!leadParagraph && node.tagName === "P" && text.length >= 60) {
       leadParagraph = text;
     }
   });
-
-  // Fallback: if the structured pass found little, use the raw text.
-  if (blocks.join(" ").length < 200) {
-    return {
-      text: (clone.textContent || "").replace(/\s+/g, " ").trim(),
-      leadParagraph,
-    };
-  }
   return { text: blocks.join("\n\n"), leadParagraph };
 }
 
@@ -143,7 +209,10 @@ function countSentences(text) {
 }
 
 function scrapeArticle() {
+  _styleCache = new WeakMap(); // fresh computed-style memo per scrape
+  const title = getArticleTitle();
   const candidates = collectCandidates();
+
   let best = null;
   let bestScore = -Infinity;
   let bestArticle = null;
@@ -162,7 +231,7 @@ function scrapeArticle() {
 
   // Prefer a real <article> element when it holds comparable content: sidebars
   // and recirculation grids sometimes out-score it on raw paragraph count.
-  let container = best || document.body;
+  let container = best;
   if (
     bestArticle &&
     bestArticle !== best &&
@@ -172,19 +241,41 @@ function scrapeArticle() {
     container = bestArticle;
   }
 
-  const title = getArticleTitle();
-  let { text, leadParagraph } = extractContent(container);
+  // Primary: prose strictly contained in the chosen root.
+  let text = "";
+  let leadParagraph = "";
+  if (container) {
+    ({ text, leadParagraph } = collectProse(container));
+  }
 
-  // Absolute fallback so we never return empty on a text-bearing page.
-  if (!text || text.length < 120) {
-    text = (document.body.textContent || "").replace(/\s+/g, " ").trim();
+  // Secondary (replaces the old raw-body / raw-clone fallbacks): a still-filtered
+  // document-wide prose pass. This applies the SAME UI/modal/overlay/hidden
+  // rejection, so no unfiltered container or body text can ever escape.
+  if (text.length < MIN_PROSE_CHARS) {
+    const secondary = collectProse(document.body);
+    if (secondary.text.length > text.length) {
+      text = secondary.text;
+      leadParagraph = leadParagraph || secondary.leadParagraph;
+    }
+  }
+
+  // If filtered extraction cannot confidently find enough prose, fail closed
+  // rather than sending page furniture.
+  if (text.length < MIN_PROSE_CHARS || countSentences(text) < MIN_PROSE_SENTENCES) {
+    return {
+      ok: false,
+      reason: "insufficient_prose",
+      title,
+      url: location.href,
+      sentenceCount: countSentences(text),
+    };
   }
 
   // Topic anchor for the backend relevance filter: headline + first real paragraph.
   const leadText = [title, leadParagraph].filter(Boolean).join(". ").slice(0, 600);
 
   return {
-    ok: text.length > 0,
+    ok: true,
     title,
     text,
     leadText,

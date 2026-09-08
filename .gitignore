@@ -18,5 +18,11 @@ classification_heads.pt
 # Inference outputs
 outputs/
 
+# Node / Playwright scraper test tooling (isolated under extension/tests)
+node_modules/
+extension/tests/node_modules/
+extension/tests/test-results/
+extension/tests/playwright-report/
+
 # Local settings
 *.local

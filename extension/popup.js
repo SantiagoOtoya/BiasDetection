@@ -162,6 +162,13 @@ async function messageTab(tabId, message) {
 async function scrapePage(tabId) {
   const result = await messageTab(tabId, { type: "SCRAPE" });
   if (!result || !result.ok || !result.text) {
+    // Fail closed: do not POST anything to /analyze when extraction fails.
+    if (result && result.reason === "insufficient_prose") {
+      throw new Error(
+        "Couldn't find enough article text on this page (mostly menus, popups, " +
+          "or UI). Open a full article and try again."
+      );
+    }
     throw new Error("Couldn't find readable article text on this page.");
   }
   return result;
