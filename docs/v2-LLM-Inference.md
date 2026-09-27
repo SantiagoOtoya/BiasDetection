@@ -1,6 +1,6 @@
 # SBERT to Llama Inference
 
-`LLM-inference/infer_bias_llm.py` loads the fine-tuned SBERT checkpoint and the two saved
+`infer_bias_llm.py` loads the fine-tuned SBERT checkpoint and the two saved
 classification heads, classifies article sentences, selects biased or
 opinionated sentences, expands each selected region with surrounding article
 context, and sends those context windows to `meta-llama/Llama-3.1-8B-Instruct`.
@@ -16,7 +16,7 @@ only the selected sentence text and surrounding article context.
 - Sentence selection: calibrated confidence gate when `calibration.json` is
   available; otherwise the legacy argmax rule is used
 - Context window: two sentences before and after each selected sentence
-- Output: `LLM-inference/outputs/bias_llm_results.jsonl`
+- Output: `outputs/bias_llm_results.jsonl`
 
 ## Calibration
 
@@ -52,47 +52,47 @@ by retrieved trusted evidence.
 
 ```powershell
 $env:BRAVE_SEARCH_API_KEY = "..."
-python .\LLM-inference\infer_bias_llm.py `
+python .\infer_bias_llm.py `
   --article-file .\article.txt `
   --enable-evidence `
   --prompt-only `
-  --output-file .\LLM-inference\outputs\article_with_evidence.jsonl
+  --output-file .\outputs\article_with_evidence.jsonl
 ```
 
 ## Install
 
 ```powershell
-python -m pip install -r .\LLM-inference\requirements-inference.txt
+python -m pip install -r .\requirements-inference.txt
 ```
 ## Examples
 
 Analyze raw article text and write LLM-ready prompts without loading Llama:
 
 ```powershell
-python .\LLM-inference\infer_bias_llm.py `
+python .\infer_bias_llm.py `
   --article-text "School systems are adopting BLM curriculum at an alarming rate, indoctrinating children to achieve Marxist objectives." `
   --selection-mode auto `
   --prompt-only `
-  --output-file .\LLM-inference\outputs\smoke.jsonl
+  --output-file .\outputs\smoke.jsonl
 ```
 
 Analyze a text file and run local Llama generation:
 
 ```powershell
-python .\LLM-inference\infer_bias_llm.py `
+python .\infer_bias_llm.py `
   --article-file .\article.txt `
-  --output-file .\LLM-inference\outputs\article_report.jsonl
+  --output-file .\outputs\article_report.jsonl
 ```
 
 Analyze a dataset-style CSV with full article text:
 
 ```powershell
-python .\LLM-inference\infer_bias_llm.py `
+python .\infer_bias_llm.py `
   --input-file .\data\final_labels_MBIC.csv `
   --article-column article `
   --id-column news_link `
   --prompt-only `
-  --output-file .\LLM-inference\outputs\mbic_prompts.jsonl
+  --output-file .\outputs\mbic_prompts.jsonl
 ```
 
 ## Output

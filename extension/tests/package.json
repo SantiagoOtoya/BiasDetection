@@ -1,0 +1,12 @@
+{
+  "name": "bias-extension-scraper-tests",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Isolated Playwright DOM tests for the content.js article extractor. Not part of the Python backend.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

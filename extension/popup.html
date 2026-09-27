@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Bias Detection</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <h1>Bias Detection</h1>
+      </div>
+      <button id="options-link" class="icon-button" title="Settings" aria-label="Settings">⚙</button>
+    </header>
+
+    <main class="app-main">
+      <!-- Idle / empty state -->
+      <section id="state-idle" class="state">
+        <p class="hint">
+          Analyze the article on this page for biased or opinionated language.
+        </p>
+        <button id="run-button" class="primary-button">Run analysis</button>
+        <p id="backend-note" class="backend-note"></p>
+      </section>
+
+      <!-- Loading state -->
+      <section id="state-loading" class="state hidden">
+        <div class="spinner" aria-hidden="true"></div>
+        <p id="loading-message" class="loading-message">Scraping page…</p>
+        <button id="cancel-button" class="ghost-button">Cancel</button>
+      </section>
+
+      <!-- Error state -->
+      <section id="state-error" class="state hidden">
+        <div class="error-icon" aria-hidden="true">!</div>
+        <p class="error-title">Something went wrong</p>
+        <p id="error-message" class="error-message"></p>
+        <button id="retry-button" class="primary-button">Try again</button>
+      </section>
+
+      <!-- Report state -->
+      <section id="state-report" class="state hidden">
+        <div class="score-card">
+          <div class="score-gauge">
+            <span id="score-value" class="score-value">—</span>
+            <span class="score-max">/100</span>
+          </div>
+          <div class="score-meta">
+            <span id="score-level" class="score-level level-unknown">Unknown</span>
+            <span id="score-caption" class="score-caption"></span>
+          </div>
+        </div>
+
+        <div class="report-block">
+          <h2 class="section-title">Report</h2>
+          <div id="report-text" class="report-text"></div>
+        </div>
+
+        <div class="factcheck-block">
+          <h2 class="section-title">Fact check</h2>
+          <ul id="factcheck-list" class="factcheck-list"></ul>
+        </div>
+
+        <div class="report-actions">
+          <button id="highlight-button" class="ghost-button">Highlight on page</button>
+          <button id="rerun-button" class="primary-button">Run again</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span id="footer-status">Idle</span>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

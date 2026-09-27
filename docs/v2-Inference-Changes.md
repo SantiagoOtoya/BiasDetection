@@ -22,7 +22,7 @@ the SBERT classification step.
 
 ## Components
 
-### `LLM-inference/infer_bias_llm.py`
+### `infer_bias_llm.py`
 
 This inference entrypoint loads the saved fine-tuned SBERT checkpoint and the
 saved MLP classification heads, classifies article sentences, builds context
@@ -44,9 +44,9 @@ The script defaults to:
 - classification heads: `classification_heads.pt` inside that checkpoint
 - LLM model: `meta-llama/Llama-3.1-8B-Instruct`
 - context window: two sentences before and after each selected sentence
-- output file: `LLM-inference/outputs/bias_llm_results.jsonl`
+- output file: `outputs/bias_llm_results.jsonl`
 
-### `LLM-inference/requirements-inference.txt`
+### `requirements-inference.txt`
 
 This separates inference dependencies from training dependencies. It includes
 the packages needed for SBERT inference, table input, and Hugging Face Llama
@@ -60,7 +60,7 @@ generation:
 - `accelerate`
 - `safetensors`
 
-### `LLM-inference/LLM-Inference.md`
+### `LLM-Inference.md`
 
 This file provides the runnable inference workflow. It explains:
 

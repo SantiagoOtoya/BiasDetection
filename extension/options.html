@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Bias Detection — Settings</title>
+    <style>
+      body {
+        width: 480px;
+        padding: 24px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 18px;
+      }
+      .field label {
+        font-weight: 600;
+      }
+      .field input {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 9px 11px;
+        color: var(--text);
+        font-size: 14px;
+      }
+      .field small {
+        color: var(--text-muted);
+      }
+      .save-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      #status {
+        font-size: 13px;
+        color: var(--level-low);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-top: 0">Settings</h1>
+
+    <div class="field">
+      <label for="backend-url">Backend URL</label>
+      <input
+        id="backend-url"
+        type="text"
+        placeholder="http://localhost:8000"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <small>
+        Where the analysis server runs. Use <code>http://localhost:8000</code> for
+        local testing, or your GPU machine's LAN IP / tunnel URL (e.g.
+        <code>https://your-tunnel.example</code>) for the full model.
+      </small>
+    </div>
+
+    <div class="save-row">
+      <button id="save-button" class="primary-button">Save</button>
+      <button id="test-button" class="ghost-button">Test connection</button>
+      <span id="status"></span>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
